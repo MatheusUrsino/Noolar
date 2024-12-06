@@ -1,5 +1,5 @@
 import "./App.css";
-import AppAreaDaLeitura from "./pages/AreaDaLeitura/src/AreaLeitura/pagina";
+import AppAreaDaLeitura from "./pages/AreaDaLeitura/src/AreaLeitura/AppAreaDaLeitura";
 import AppComunidade from "./pages/Comunidade/comunidade/src/AppComunidade";
 import AppDocs from "./pages/Documentos/src/AppDocs";
 import AppDocsNecessarios from "./pages/DocumentosNecessarios/src/AppDocsNecessarios";
