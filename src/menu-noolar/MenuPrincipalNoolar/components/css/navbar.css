@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 3vw;
+  width: 90%;
+  position: relative;
+  z-index: 10;
+  
+}
+.navbar-logo {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.navbar-logo .logo {
+  height: 60%; /* Tamanho reduzido */
+  width: auto;
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.navbar-logo:hover .logo {
+  transform: scale(1.1); /* Amplia ligeiramente a logo ao passar o mouse */
+}
+
+/* Texto "Noolar" */
+.navbar-logo .logo-text {
+  position: absolute;
+  bottom: -20px; /* Ajuste de posicionamento */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1vw;
+  color: white;
+  opacity: 0; /* Invisível por padrão */
+  transition: opacity 0.3s ease; /* Animação para exibir/esconder */
+  pointer-events: none; /* Garante que o texto não interfira no hover */
+}
+
+.navbar-logo:hover .logo-text {
+  opacity: 1; /* Torna o texto visível ao passar o mouse */
+}
+
+/* Logo */
+.navbar-logo {
+  margin-left: 1rem;
+  height: 4vw;
+  position: relative;
+  display: flex;
+  top: 0.8vw;
+}
+
+.navbar-logo .logo {
+  height: 60%; /* Tamanho reduzido */
+  width: auto;
+}
+
+/* Links de navegação */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza os textos dos links */
+  gap: 4vw;
+}
+
+.navbar-links a {
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center; /* Centraliza o texto dos links */
+}
+
+.navbar-links a:hover {
+  color: #f0a500;
+}
+
+/* Ícone do menu (para mobile) */
+.menu-icon {
+  display: none;
+  font-size: 1.5vw;
+  color: white;
+  cursor: pointer;
+}
+
+/* Perfil do usuário */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-right: 2rem;
+  position: relative;
+  right: -5vw;
+}
+
+.usuario {
+  font-size: 1vw; /* Tamanho reduzido */
+  text-align: center; /* Centraliza o texto do usuário */
+}
+
+/* Ajuste da imagem do usuário */
+.profile img {
+  height: 2.5vw; /* Tamanho menor da imagem */
+  width: 2.5vw; /* Proporção quadrada */
+  border-radius: 50%; /* Deixa a imagem circular */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .navbar {
+    height: 5vw;
+  }
+
+  .navbar-logo .logo {
+    height: 50%; /* Ajuste proporcional */
+  }
+
+  .navbar-links {
+    font-size: 1rem;
+  }
+
+  .profile img {
+    height: 2vw; /* Tamanho reduzido para telas menores */
+    width: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 6vw;
+  }
+
+  .navbar-logo .logo {
+    height: 40%; /* Ajusta o tamanho da logo */
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar-links {
+    display: none; /* Oculta links em dispositivos muito pequenos */
+  }
+
+  .profile img {
+    height: 1.8vw; /* Imagem de usuário ainda menor */
+    width: 1.8vw;
+  }
+}

@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Titulo com marcações Laranja*/
+zOrangeText {
+  color: #F6794A;
+  font-weight: 700;
+
+}
+
+.YellowText {
+  color: #F3B95A;
+  font-weight: 700;
+  
+  width: 5vw;
+  height: 0vw;
+}
+
+/* Titulo NOOLAR responsivo para computador */
+.title h1 {
+  color: #fff;
+  width: fit-content;
+  height: 7.5vw;
+  text-shadow: 0vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  margin: 0;
+  letter-spacing: -1vw;
+  display: flex;
+}
+
+/* Titulo NOOLAR responsivo para Tablet */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 8vw;
+    /* Aumenta o tamanho da fonte para maior legibilidade */
+    height: auto;
+    /* Ajusta a altura para se adaptar ao texto */
+    letter-spacing: -0.5vh;
+    /* Reduz o espaçamento entre letras */
+    text-align: center;
+    /* Centraliza o texto para uma melhor apresentação em telas menores */
+  }
+}
+
+/* Titulo NOOLAR responsivo para celular */
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 6vw;
+    /* Ajusta o tamanho da fonte para telas pequenas */
+    text-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
+    /* Reduz a sombra para manter o texto legível */
+    letter-spacing: -0.2vh;
+    /* Reduz ainda mais o espaçamento entre letras */
+    text-align: center;
+    margin: 1;
+    /* Centraliza o título na tela */
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+  }
+
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+  }
+
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+  }
+
+  ul li:hover a {
+    padding-left: 50px;
+  }
+
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+
+  #check {
+    display: none;
+  }
+
+  label #btn,
+  label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+
+  #check:checked~.sidebar {
+    left: 0;
+  }
+
+  #check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #check:checked~label #cancel {
+    left: 195px;
+  }
+
+  #check:checked~section {
+    margin-left: 250px;
+  }
+
+  section {
+    background: url(./img/forest.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  }
+}
+
+.title p {
+  color: #fff;
+  width: 45vw;
+  height: fit-content;
+  text-shadow: 0vw 0.2vw 0.4vw rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Ajustes para telas médias (tablets) */
+@media (max-width: 768px) {
+  .title p {
+    font-size: 3vw;
+    /* Aumenta o tamanho da fonte para melhor legibilidade em tablets */
+    width: 55vw;
+    /* Expande a largura para ocupar mais espaço em telas menores */
+
+  }
+}
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+  .title p {
+    font-size: 3vw;
+    /* Ajusta o tamanho da fonte para telas menores */
+    width: 40vw;
+    /* Aumenta ainda mais a largura para preencher a tela */
+    text-align: left;
+    /* Centraliza o texto para uma apresentação melhor em dispositivos móveis */
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  text-align: left;
+  margin: 10vw 22vw;
+}
+
+.bgImage {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -11vw;
+  right: 0vw;
+  width: 100%;
+  height: 70vw;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bgImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.globoImg {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+  width: 35vw;
+}
+
+
+/*  */
+
+
+
+.transition1{
+  display: flex;
+  flex-direction:column;
+  bottom: -20vw;
+  right: 35vw;
+  justify-content: center;
+  top: 10vw;
+}
+
+.transition1 .desc1 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  width: 77vw;
+  height: 0vw;
+  color: hsl(166, 68%, 30%);
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: -1.12px;
+  right: -15vw;
+  top: 64vw;
+
+  
+}
+
+.circulo {
+  display: flex;
+  position: relative;
+  width: 100vw;  
+  height: 100vw;
+  align-items: center;
+  justify-content: center;
+  right: 33vw;
+  top: 45vw;
+}
+
+
+.circulo img:first-child {
+
+
+  left: -3vw;
+  width: 40vw;
+  height: 70vw;
+  z-index: 0;  
+}
+
+
+.imigrante1{
+  display: flex;
+  position: absolute;
+  
+  top: 78vw;
+  left: 10vw;
+  height: 40vw;
+
+
+
+}
+
+/**/
+
+.nosso_objetivo {
+  display: flex;
+  position: absolute;
+  top: -6vw;
+}
+
+.objetivo{
+  position: absolute;
+  top: 60vw;
+  left: 5vw;
+  text-align: center;
+
+
+
+}
+
+.objetivo h1{
+  color: #198168;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 3.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.4px;
+  width: 70VW;
+  height: 5VW;
+
+
+
+}
+
+.objetivo p{
+  color: #002C3B;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: -1.84px;
+
+  
+
+}
+
+
+/* .card-list{
+
+
+
+
+
+} */
+
+.card-list{
+  position: absolute;
+  display: flex;
+  right: 2vw;
+  top: 3vh;
+
+}
+.card-list .card-title{
+  bottom: 11vw;
+}
+
+.card-list .card-text{
+  bottom: 5vw;
+}
+
+.card1{
+  position: absolute;
+  display: flex;
+  top: 75vw;
+  width: 20vw;
+  height: 30vw;
+
+}
+
+.card-title{
+
+  color: #198168;
+  font-family: Poppins; 
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.4px;
+  font-size: 2vw;
+
+
+  
+  bottom: 12.5vw;
+  position: absolute;
+  display: flex;
+  
+}
+
+
+
+.card-container {
+  width: 25vw;
+  height: 28vw;
+  padding: 3vw;
+  border-radius: 1.5vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+  background-color: #fff;
+  display: flex;
+  
+}
+
+
+.card-image {
+  width: 19vw;
+  height: 10vw;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+
+.card-text {
+  color: #00151C;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+  position: absolute;
+  display: flex;
+
+  bottom: 6vw;
+
+  width: 20vw;
+}
+
+.card-button {
+  background-color: #F6794A;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.63vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.px;
+  
+  border: none;
+  border-radius: 2vw;
+  cursor: pointer;
+  padding: 0.78vw 1.85vw;
+  position: absolute;
+  display: flex;
+  bottom: 0.5vw;
+}
+
+
+.card-button:hover {
+  background-color: #c9613c;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+
+/**/
+
+.card1 .card-text{
+  top: 17vw;
+
+}
+.card1 .card-image{
+  position: absolute;
+  top: 4.5vw;
+}
+
+.card2 .card-container{
+  bottom: -103vw;
+  left: 30vw;
+  height: 28vw;
+  width: 25vw;
+
+
+
+}
+
+.card2 .card-text{
+  font-size: 1.5vw;
+  width: 13vw;
+  position: absolute;
+  top: 17.5vw;
+}
+
+.card2 .card-image{
+  position: absolute;
+  display: flex;
+
+  top: 1.6vw;
+  width: 12vw;
+  height: 12vw;
+}
+
+.card3 .card-container{
+  bottom: -105vw;
+  left: 60vw;
+  
+
+
+
+}
+
+.card3 .card-container{
+  bottom: -103vw;
+  height: 28vw;
+  width: 25vw;
+
+}
+
+.card3 .card-image {
+  position: absolute;
+  display: flex;
+  
+  width: 12vw ;
+  height: 12vw ;
+
+  top: 2vw;
+}
+
+
+/* IA */
+
+.btnIA{
+  background-color: #ff914d;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.50vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.px;
+  flex-shrink: 0;
+  
+  border: none;
+  border-radius: 4vw;
+  cursor: pointer;
+  padding: 0.78vw 1.85vw;
+  position: absolute;
+  display: flex;
+  bottom: 0.5vw;
+
+  width: 26vw;
+  height: 27;
+
+  left: 40vw;
+  bottom: -33vw;
+  transition: all 0.3s ease;
+}
+
+.IA {
+  display: flex;
+  position: absolute;
+  top: 125vw;
+}
+
+.fundoIA{
+  display: flex;
+  position: absolute;
+  bottom: -40vw;
+  left: 1vw;
+
+  height: 47vw;
+  z-index: -3;
+}
+
+.imgIA{
+  display: flex;
+  position: absolute;
+
+  
+  left: 3vw;
+
+  height: 30vw;
+
+}
+
+.IAtext{
+  display: flex;
+  position: absolute;
+  width: 40vw;
+
+  right: -75vw;
+  top : 5.5vw;
+}
+
+.IAtext h1{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.44px;
+
+  width: 35vw;
+  height: 20vw;
+
+  display: flex;
+  position: absolute;
+}
+
+.IAtext p{
+
+
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.05px;
+
+  width: 40vw;
+  height: vw;
+  top: 10vw;
+
+  position: relative;
+
+}
+
+
+.btnIA:hover {
+  background-color: #f36633;
+  transform: scale(1.02);
+}
+
+.foot{
+  display: flex;
+  position: absolute;
+
+  width: 99.1vw;
+  left: -10vw;
+  top: 125vw;
+}
+
+
+/*doaçao*/
+
+
+.fundo_doacao{
+  display: flex;
+  position: absolute;
+
+}
+
+.fundo_doacao img{
+position: absolute;
+
+height: 80vw;
+width: 99.1vw;
+left: -10vw;
+top: 55.9vw;
+
+
+z-index: -3;
+}
+
+.img_donar img{
+  width: 40vw;
+  height: 40vw;
+  
+  top: 75vw;
+  left: -4vw;
+
+
+
+}
+
+.text_donar{
+  position: absolute;
+  display: flex;
+
+  top: 84vw;
+  left: 40vw;
+}
+
+.text_donar h1{
+  color: #F3B95A;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 6.3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01vw;
+
+  width: 31vw;
+
+  display: flex;
+  position: absolute;
+  
+}
+.text_donar p{
+  display: flex;
+  position: absolute;
+
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1vw;
+
+  width: 45vw;
+
+  top: 8vw;
+
+}
+
+.text_donar .btnDoar{
+  display: flex;
+  position: absolute;
+  
+  background-color: #ff914d;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.50vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.px;
+  flex-shrink: 0;
+  justify-content: center;
+  
+  border: none;
+  border-radius: 4vw;
+  cursor: pointer;
+  padding: 0.78vw 1.85vw;
+  position: absolute;
+  display: flex;
+  bottom: 0.5vw;
+
+  width: 19vw;
+  bottom: -30vw;
+
+  transition: all 0.3s ease;
+}
+
+.btnDoar:hover{
+  background-color: #f36633;
+  transform: scale(1.01);
+
+}

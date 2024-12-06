@@ -1,10 +1,10 @@
 import "./App.css";
-import AppAreaDaLeitura from "./pages/AreaDaLeitura/src/AppAreaDaLeitura";
-import AppComunidade from "./pages/Comunidade/comunidade/src/AppComunidade";
-import AppDocs from "./pages/Documentos/src/AppDocs";
-import AppDocsNecessarios from "./pages/DocumentosNecessarios/src/AppDocsNecessarios";
-import AppMenu from "./pages/menu-noolar/MenuPrincipalNoolar/src/components/menu";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AppMenu from "./menu-noolar/MenuPrincipalNoolar/components/menu";
+import AppAreaDaLeitura from "./AreaDaLeitura/AppAreaDaLeitura";
+import AppDocs from "./Documentos/AppDocs";
+import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
       <Routes>
       <Route path="/" element={<AppMenu />} />
       <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
-      <Route path="/Comunidades" element={<AppComunidade />} />
       <Route path="/Documentos" element={<AppDocs />} />
       <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
 
