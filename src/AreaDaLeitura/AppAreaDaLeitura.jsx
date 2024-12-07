@@ -6,6 +6,7 @@ import Livros from "./components/Livros";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import NavBar from "../header/NavBarApp";
 // Definindo as categorias e livros com título, autor, imagem e descrição
 // Definindo as categorias e livros com título, autor, imagem e descrição
 const categorias = [
@@ -316,6 +317,7 @@ function AppAreaDaLeitura() {
   
   return (
     <div className="Leiturapage">
+      <NavBar/>
       <AreaDaLeitura />
   
       <div className="LeituracardsArea">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Cards from './Card';
@@ -5,6 +6,13 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import './css/MainMenuStyle.css';
 
+=======
+import Cards from "./Card";
+import Footer from "./Footer";
+import "./css/MainMenuStyle.css";
+import motionMainMenu from "./motionMenu";
+import { Link } from "react-router-dom";
+>>>>>>> 063e173fceaf414f44704f1b3f56ad8098bbce97
 function AppMenu() {
   return (
     <div className="app-container">
