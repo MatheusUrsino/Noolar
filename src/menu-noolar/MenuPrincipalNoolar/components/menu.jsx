@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Cards from './Card';
-import Footer from './Footer';
+
 import './css/MainMenuStyle.css';
 
 function AppMenu() {
@@ -94,7 +94,6 @@ function AppMenu() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }
