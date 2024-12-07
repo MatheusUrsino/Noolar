@@ -43,9 +43,9 @@ function AppMenu() {
           <div className="nosso_objetivo">
             <div className="objetivo">
               <h1>Nosso objetivo é:</h1>
-              <p>
-                Oferecer cursos de Português e Orientação sobre <br></br>
-                comportarmento no ambiente de trabalho.
+              <p id="textoObjetivo">
+                Oferecer cursos de Português e Orientação sobre
+                comportarmento no ambiente de trabalho. 
               </p>
             </div>
             <div className="card-list">

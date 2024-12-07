@@ -36,11 +36,11 @@
 @media (max-width: 1200px) {
   .DocscardStatic {
     width: 75%; /* Aumenta a largura do card para 60% */
-    height: 40vh; /* Aumenta a altura do card */
+    height: 30vh; /* Aumenta a altura do card */
   }
 
   .DocscardStatic-image {
-    width: 60%; /* Ajusta a largura da imagem */
+    width: 40%; /* Ajusta a largura da imagem */
   }
 
   .DocscardStatic-title {
@@ -52,7 +52,7 @@
 @media (max-width: 800px) {
   .DocscardStatic {
     width: 80%; /* A largura do card aumenta para 80% */
-    height: 60vh; /* A altura do card aumenta para 70% */
+    height: 50vh; /* A altura do card aumenta para 70% */
     padding: 4vw; /* Aumenta o espaçamento interno */
   }
 
@@ -74,7 +74,7 @@
   }
 
   .DocscardStatic-image {
-    width: 80%; /* A imagem ocupa 80% do card */
+    width: 50%; /* A imagem ocupa 80% do card */
   }
 
   .DocscardStatic-title {

@@ -7,8 +7,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+#textoObjetivo
+{
+  margin-top: 2vw;
+  color: #006182;
+  letter-spacing: 0.15vw;
+  text-align: center;
+}
+
 /*Titulo com marcações Laranja*/
-zOrangeText {
+.OrangeText {
   color: #F6794A;
   font-weight: 700;
 
@@ -65,6 +73,7 @@ zOrangeText {
     margin: 1;
     /* Centraliza o título na tela */
   }
+
 
   * {
     padding: 0;
@@ -208,6 +217,10 @@ zOrangeText {
     /* Aumenta ainda mais a largura para preencher a tela */
     text-align: left;
     /* Centraliza o texto para uma apresentação melhor em dispositivos móveis */
+  }
+  .objetivo p
+  {
+    letter-spacing: 3vw;
   }
 }
 
@@ -361,17 +374,11 @@ zOrangeText {
 }
 
 
-/* .card-list{
-
-
-
-
-
-} */
+/* .card-list{} */
 
 .card-list{
-  position: absolute;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
   right: 2vw;
   top: 3vh;
 
@@ -392,6 +399,7 @@ zOrangeText {
   height: 30vw;
 
 }
+
 
 .card-title{
 

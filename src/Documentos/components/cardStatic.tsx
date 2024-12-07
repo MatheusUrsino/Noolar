@@ -1,16 +1,22 @@
 import React from 'react';
 import './css/styleCardStatic.css'; // Certifique-se de que o CSS está importado corretamente
+import { Link } from 'react-router-dom';
 
 function CardStatic(props) {
+  const handleClick = () => {
+    // Faz a rolagem manualmente para o topo
+    window.scrollTo(0, 0);
+  };
   return (
-    <div className="DocscardStatic">
+    <Link to="/DocumentosNecessarios" onClick={handleClick} className='linkNavigate DocscardStatic'>
     <img 
       src={props.imagem} 
       alt={props.legenda} 
       className="DocscardStatic-image"
     />
     <h2 className="DocscardStatic-title">{props.titulo}</h2>
-  </div>
+  </Link>
+
   );
 };
 

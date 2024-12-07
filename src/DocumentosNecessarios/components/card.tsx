@@ -12,6 +12,8 @@ interface CardProps {
 function Card({ bgColor, textoFrente, textoVerso, imagemFrente, legendaImagemFrente }: CardProps) {
   const [flipped, setFlipped] = useState(false);
 
+  
+
   const handleMouseEnter = () => {
     setFlipped(true);
   };

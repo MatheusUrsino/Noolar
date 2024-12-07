@@ -74,7 +74,7 @@
  /* Estilo para cada item de livro no carrossel */
 .Leituralivro {
   position: relative;
-  margin-right: 6vw; /* Espaçamento à direita entre os livros */
+  margin-right: 2vw; /* Espaçamento à direita entre os livros */
   text-align: center; /* Centraliza o texto do livro */
 }
 
@@ -107,7 +107,7 @@
 .Leituralegenda
 {
   color: #006182;
-  text-align: left;
+  text-align: center;
 }
 
 /* Estilo ao passar o mouse sobre o título do livro */
@@ -116,7 +116,8 @@
   font-size: 1.8vw; /* Tamanho do título */
   color: #006182; /* Cor laranja */
   margin-bottom: -0.5vw; /* Margem inferior */
-  margin-top: 0vw; /* Sem margem superior */
+  text-align: center;
+  align-items: center;
 }
 
 /* Estilo ao passar o mouse sobre o parágrafo do livro */
@@ -125,6 +126,8 @@
   color: #006182; /* Cor laranja */
   font-size: 1.5vw; /* Tamanho do parágrafo */
   margin-top: 0; /* Sem margem superior */
+  text-align: center;
+  align-items: center;
 }
 
 /* Estilo para a imagem de cada livro */
