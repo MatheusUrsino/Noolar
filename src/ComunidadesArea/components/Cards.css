@@ -1,0 +1,209 @@
+.card{
+    background-image: url(/img/BackgroundFundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -3vw;
+    top: 3vw;
+    width: 100vw;
+    align-items: center;
+}
+
+.textoCards{    
+    margin-top: 1.3em;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+.destacadoCards{
+    color: #F3B95A;
+    font-size: 2em;
+}
+
+.imagensConfiguracao{
+    border-radius: 60px;
+    width: 390px;
+    cursor: pointer;
+    margin: 50px;
+    background-size: 100%; 
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);    
+}
+
+.imagensConfiguracao:hover{
+    transform:scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.contato{
+    display: flex;    
+    padding: 80px;      
+}
+
+.imagemGlobo{
+    width: 500px;
+    background-size: 50%;  
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;    
+}
+.textoContato{
+    font-size: 35px;
+}
+
+.paragrafoContato{
+    font-size: 16px;
+}
+
+.destacadoParagrafo{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1020px){
+    .textoCards{        
+        font-size: 1.3em;
+    }
+    .destacadoCards{        
+        font-size: 1.5em;
+    }
+    .imagensConfiguracao{        
+        width: 380px;        
+        margin: 40px;        
+    }
+    .textoContato{
+        font-size: 25px;
+    }
+
+    .imagemGlobo{
+        width: 400px;
+        background-size: 50%;  
+    }
+
+    .paragrafoContato{
+        font-size: 16px;
+    }
+    
+    .destacadoParagrafo{
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 960px){
+    .textoCards{        
+        margin-top: 4em;
+        font-size: 1.1;
+    }
+
+    .imagensConfiguracao{        
+        width: 280px;        
+        margin: 30px;        
+    }
+
+    
+    .textoContato{
+        font-size: 20px;
+    }
+    .paragrafoContato{
+        font-size: 15px;
+    }
+    
+    .destacadoParagrafo{
+        font-size: 15px;
+    }
+    .imagemGlobo{
+        width: 350px;
+         
+    }
+}
+@media screen and (max-width: 740px) {
+    .textoCards{        
+        font-size: 1.1em;
+    }
+    .destacadoParagrafo{
+        font-size: 1.1em;
+    }
+    .imagensConfiguracao{        
+        width: 250px;        
+        margin: 20px;        
+        border-radius: 20px;
+    }
+
+    .textoContato{
+        font-size: 15px;
+    }
+    .paragrafoContato{
+        font-size: 12px;
+    }
+    
+    .destacadoParagrafo{
+        font-size: 12px;
+    }
+    .imagemGlobo{
+        width: 300px;         
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .textoCards{        
+        font-size: .9em;
+    }
+    .destacadoCards{        
+        font-size: .9em;
+    }
+    .imagensConfiguracao{        
+        width: 200px;        
+        margin: 20px;                
+    }
+
+    .imagemGlobo{
+        width: 200px;         
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .card{
+        background-repeat: repeat;
+    }
+
+    .textoCards{        
+        font-size: .8em;
+    }
+    .destacadoCards{     
+        font-size: .8em;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagensConfiguracao{        
+        width: 300px;                             
+        border-radius: 30px;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    .imagemGlobo{
+        width: 320px;      
+        margin-bottom: 1em;   
+    }
+
+    .textoContato{
+        font-size: 20px;        
+    }
+    .paragrafoContato{
+        font-size: 16px;
+    }
+    
+    .destacadoParagrafo{
+        font-size: 16px;
+    }
+}
