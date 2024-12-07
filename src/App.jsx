@@ -6,21 +6,28 @@ import AppAreaDaLeitura from "./AreaDaLeitura/AppAreaDaLeitura";
 import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
 import AppDaComunidades from "./ComunidadesArea/AppComunidades.jsx";
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
+import NavbarApp from "./header/NavBarApp.jsx";
+
 
 function App() {
   return (
     <>
-     <Router>
-      <Routes>
-      <Route path="/" element={<AppMenu />} />
-      <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
-      <Route path="/Documentos" element={<AppDocs />} />
-      <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
-      <Route path="/Comunidades" element={<AppDaComunidades />} />
-
-
-      </Routes>
-    </Router>
+      <header>
+        <NavbarApp/>
+      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<AppMenu />} />
+          <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
+          <Route path="/Documentos" element={<AppDocs />} />
+          <Route
+            path="/DocumentosNecessarios"
+            element={<AppDocsNecessarios />}
+          />
+          <Route path="/Comunidades" element={<AppDaComunidades />} />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -378,7 +378,6 @@
 
 .card-list{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
   right: 2vw;
   top: 3vh;
 

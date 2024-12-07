@@ -2,7 +2,6 @@ import Cards from "./Card";
 import Footer from "./Footer";
 import "./css/MainMenuStyle.css";
 import motionMainMenu from "./motionMenu";
-import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 function AppMenu() {
   return (
