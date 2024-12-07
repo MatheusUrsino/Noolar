@@ -16,7 +16,7 @@ function App() {
       <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
       <Route path="/Documentos" element={<AppDocs />} />
       <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
-      <Route path="/Comunidade" element={<AppComunidade />} />
+      <Route path="/Comunidades" element={<AppComunidade />} />
 
 
       </Routes>
