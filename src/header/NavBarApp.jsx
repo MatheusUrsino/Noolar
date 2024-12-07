@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SignedIn,
   SignedOut,
@@ -9,8 +9,18 @@ import { Link } from "react-router-dom";
 import "./css/navBarStyle.css";
 import ItensSideBar from "./components/itensSideBar";
 import ItensNavBar from "./components/itensNavBar";
+
 function NavbarApp() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Bloqueia o scroll quando a sidebar estiver aberta
+    if (menuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [menuOpen]);
 
   return (
     <header className="headerApp">
@@ -34,13 +44,13 @@ function NavbarApp() {
         </Link>
         <div className="contentNavbar">
           <div className="opcoes">
-          <ItensNavBar link="/AreaDaLeitura" item="Area da Leitura"/>
-          <ItensNavBar link="/Cursos" item="Cursos"/>
-          <ItensNavBar link="/Comunidades" item="Comunidade"/>
-          <a href="https://lingo-lar.vercel.app/" className="linkNavigate navBarItens">LingoLar</a>
-          <ItensNavBar link="/SobreNos" item="Sobre nós"/>
-          <ItensNavBar link="/Documentos" item="Documentos"/>
-          <ItensNavBar link="/Doacao" item="Doação"/>
+            <ItensNavBar link="/AreaDaLeitura" item="Area da Leitura" />
+            <ItensNavBar link="/Cursos" item="Cursos" />
+            <ItensNavBar link="/Comunidades" item="Comunidade" />
+            <a href="https://lingo-lar.vercel.app/" className="linkNavigate navBarItens">LingoLar</a>
+            <ItensNavBar link="/SobreNos" item="Sobre nós" />
+            <ItensNavBar link="/Documentos" item="Documentos" />
+            <ItensNavBar link="/Doacao" item="Doação" />
           </div>
           <div className="userArea">
             <SignedOut>
@@ -69,17 +79,13 @@ function NavbarApp() {
             </Link>
           </div>
           <div className="sideBarContent">
-          <ItensSideBar link="/AreaDaLeitura" item="Area da Leitura"/>
-          <ItensSideBar link="/Cursos" item="Cursos"/>
-          <ItensSideBar link="/Comunidade" item="Comunidade"/>
-          <a href="https://lingo-lar.vercel.app/" className="linkNavigate sideBarItens">LingoLar</a>
-          <ItensSideBar link="/SobreNos" item="Sobre nós"/>
-          <ItensSideBar link="/Documentos" item="Documentos"/>
-          <ItensSideBar link="/Doacao" item="Doação"/>
-
-
-
-
+            <ItensSideBar link="/AreaDaLeitura" item="Area da Leitura" />
+            <ItensSideBar link="/Cursos" item="Cursos" />
+            <ItensSideBar link="/Comunidade" item="Comunidade" />
+            <a href="https://lingo-lar.vercel.app/" className="linkNavigate sideBarItens">LingoLar</a>
+            <ItensSideBar link="/SobreNos" item="Sobre nós" />
+            <ItensSideBar link="/Documentos" item="Documentos" />
+            <ItensSideBar link="/Doacao" item="Doação" />
           </div>
           <div className="sideBaruserArea">
             <SignedOut>

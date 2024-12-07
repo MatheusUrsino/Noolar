@@ -6,7 +6,6 @@ import AppAreaDaLeitura from "./AreaDaLeitura/AppAreaDaLeitura";
 import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
 import AppDaComunidades from "./ComunidadesArea/AppComunidades.jsx";
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
 import NavbarApp from "./header/NavBarApp.jsx";
 
 
