@@ -5,7 +5,7 @@ import AppMenu from "./menu-noolar/MenuPrincipalNoolar/components/menu";
 import AppAreaDaLeitura from "./AreaDaLeitura/AppAreaDaLeitura";
 import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
-import AppComunidades from "./Comunidade/AppComunidade";
+import AppComunidades from "./Comunidade/AppComunidades";
 
 function App() {
   return (
