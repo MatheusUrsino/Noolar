@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Cards from './Card';
 import Footer from './Footer';
-import Navbar from './Navbar';
 import './css/MainMenuStyle.css';
 
 =======
