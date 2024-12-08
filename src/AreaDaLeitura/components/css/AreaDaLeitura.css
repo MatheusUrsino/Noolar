@@ -1,4 +1,9 @@
 /* Estilo geral para o contêiner principal */
+
+.livrosFooter
+{
+margin-top: 320vh;
+}
 #root {
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 2vw; /* Espaçamento interno */

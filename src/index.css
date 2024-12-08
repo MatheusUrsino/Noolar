@@ -6,16 +6,16 @@
   background: #E6CFC9;
   color: white;
 overflow-x: hidden;
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
 }
 
 .linkNavigate
 {
   color: inherit;
   text-decoration: inherit;
-}
-
-*{
-  margin: 0;
-  padding: 0;  
 }
 

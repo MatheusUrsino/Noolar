@@ -6,7 +6,7 @@ const Footer = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const footer = document.querySelector('.footer');
+      const footer = document.querySelector(".footer");
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
@@ -18,15 +18,15 @@ const Footer = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <footer className={`footer ${isFixed ? 'fixed' : ''}`}>
+    <footer className={`footer ${isFixed ? "fixed" : ""}`}>
       <div className="footer-container">
         <div className="footer-logo">
           <img src="/images/logo.png" alt="Logo" />
@@ -57,16 +57,18 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <div className="social-icons">
-            <box-icon name='linkedin-square' type='logo' color='#ffffff'></box-icon>
-            <box-icon name='instagram-alt' type='logo' color='#fff'></box-icon>
-            <box-icon name='envelope' type='solid' color='#fff'></box-icon>
+            <box-icon
+              name="linkedin-square"
+              type="logo"
+              color="#ffffff"
+            ></box-icon>
+            <box-icon name="instagram-alt" type="logo" color="#fff"></box-icon>
+            <box-icon name="envelope" type="solid" color="#fff"></box-icon>
           </div>
           <button className="contact-button">Contato</button>
         </div>
       </div>
-      <div className="footer-copyright">
-        © 2024 Copyright - Noolar
-      </div>
+      <div className="footer-copyright">© 2024 Copyright - Noolar</div>
     </footer>
   );
 };

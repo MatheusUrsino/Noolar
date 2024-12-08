@@ -1,0 +1,106 @@
+.contentComunidade {
+  width: 100vw; /* Ocupa a largura total da tela */
+}
+
+.bgComunidadeHeaderDiv {
+  background-image: url("/bgComunidadeHeader.svg");
+  background-repeat: no-repeat;
+  background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+  width: 105%; /* Garante que ocupe toda a largura da tela */
+  position: relative;
+  top: 0;
+  left: -3vw;
+  display: flex;
+
+}
+
+.bgComunidadeBodyDiv {
+  background-image: url("/bgComunidadeBody.svg");
+  background-repeat: no-repeat;
+  background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+  width: 120%; /* Garante que ocupe toda a largura da tela */
+  position: relative;
+  top: 3vw;
+  left: -2vw;
+  display: flex;
+}
+
+.paginaCOmunidadeObjetos
+{
+  margin-top: -15vw;
+}
+
+@media screen and (max-width: 1020px)
+{
+  .contentComunidade {
+    width: 100vw; /* Ocupa a largura total da tela */
+  }
+  
+  .bgComunidadeHeaderDiv {
+    background-image: url("/bgComunidadeHeader.svg");
+    background-repeat: no-repeat;
+    background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+    width: 150%; /* Garante que ocupe toda a largura da tela */
+    position: relative;
+    top: 0;
+    left: -3vw;
+    display: flex;
+  
+  }
+  
+  .bgComunidadeBodyDiv {
+    background-image: url("/bgComunidadeBody.svg");
+    background-repeat: no-repeat;
+    background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+    width: 150%; /* Garante que ocupe toda a largura da tela */
+    height: 100%;
+    position: relative;
+    top: 3vw;
+    left: -3vw;
+    display: flex;
+    margin: 0;
+  }
+  
+  .paginaCOmunidadeObjetos
+  {
+    margin-top: -15vw;
+  }
+  
+}
+@media screen and (max-width: 768px)
+{
+  .contentComunidade {
+    width: 100vw; /* Ocupa a largura total da tela */
+  }
+  
+  .bgComunidadeHeaderDiv {
+    background-image: url("/bgComunidadeHeader.svg");
+    background-repeat: no-repeat;
+    background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+    width: 150%; /* Garante que ocupe toda a largura da tela */
+    position: relative;
+    top: 0;
+    left: -3vw;
+    display: flex;
+  
+  }
+  
+  .bgComunidadeBodyDiv {
+    background-image: url("/bgComunidadeBody.svg");
+    background-repeat: no-repeat;
+    background-size: 100% ; /* Ajusta a imagem para cobrir 100% da largura e altura */
+    width: 270%; /* Garante que ocupe toda a largura da tela */
+    height: 100%;
+    position: relative;
+    top: 3vw;
+    left: -3vw;
+    display: flex;
+    margin: 0;
+  }
+  
+  .paginaCOmunidadeObjetos
+  {
+    margin-top: -15vw;
+  }
+  
+}
