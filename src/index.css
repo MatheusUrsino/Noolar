@@ -5,11 +5,7 @@
   font-family: 'Poppins';
   background: #E6CFC9;
   color: white;
-overflow-x: hidden;
-margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
+
   overflow-x: hidden; /* Evita rolagem horizontal indesejada */
 }
 
@@ -19,9 +15,7 @@ margin: 0;
   text-decoration: inherit;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
+* {
+  box-sizing: border-box;
+  max-width: 100%;
 }
