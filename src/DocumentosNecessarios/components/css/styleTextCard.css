@@ -15,7 +15,7 @@
   display: flex; /* Flexbox para organizar os elementos */
   flex-direction: column; /* Empilha verticalmente */
   position: relative; /* Posição relativa */
-  left: -2vw;
+  left: 0vw;
   text-align: left; /* Alinhamento do texto à esquerda */
   margin-top: 30vw; /* Espaçamento superior */
 }
@@ -47,7 +47,7 @@
   display: flex; /* Flexbox para organizar os elementos */
   flex-direction: column; /* Empilha verticalmente */
   position: relative; /* Posição relativa */
-  left: 2vw;
+  left: 0vw;
 
   text-align: right; /* Alinhamento do texto à direita */
   margin-top: 0vw; /* Espaçamento superior */

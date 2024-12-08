@@ -14,19 +14,20 @@
   }
   
   .contentNavbar {
-    width: 85%;
+    width: 100%;
     display: flex;
-    margin-left: 10vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     gap: 4vw;
     flex-direction: row;
   }
   
   .opcoes {
     width: 100%;
+    margin-left: 6.5vw;
     display: flex;
-    margin-left: auto;
-    margin-top: 0.5vw;
-    gap: 4vw;
+    gap: 2vw;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -56,27 +57,35 @@
     transition: all 0.3s ease;
   }
   
-  .logo {
-    width: 100%;
+  .logoContent {
+    width: fit-content;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: auto;
     display: flex;
+    position: relative;
     align-items: center;
   }
   
   /* Mostrar a palavra Noolar apenas no hover */
-  .logo:hover h2 {
+  .logoContent:hover h2 {
     opacity: 1;
   }
   
-  .logo h2 {
+  .logoContent h2 {
     color: #f6794a;
-    position: absolute;
-    left: 7vw;
-    top: 2vw;
+    display: flex;
+   position: relative;
+   margin-left: 1vw;
     font-size: 24px;
     opacity: 0;
     transition: opacity 0.3s ease;
+  }
+  .logo
+  {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
   
   .userArea {

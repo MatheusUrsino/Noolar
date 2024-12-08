@@ -10,8 +10,6 @@ import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 
 function App() {
-
-
   return (
     <>
       <Router>
@@ -21,17 +19,20 @@ function App() {
         <Routes>
           <Route path="/" element={<AppMenu />} />
           <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
-  top: 1vw
           <Route path="/Documentos" element={<AppDocs />} />
-          <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
+          <Route
+            path="/DocumentosNecessarios"
+            element={<AppDocsNecessarios />}
+          />
           <Route path="/Comunidades" element={<AppDaComunidades />} />
           <Route path="/SobreNos" element={<SobreNos />} />
         </Routes>
-          <Footer/>
+        <footer>
+          <Footer />
+        </footer>
       </Router>
     </>
   );
 }
-
 
 export default App;
