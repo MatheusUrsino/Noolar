@@ -25,11 +25,8 @@ function App() {
           <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
           <Route path="/Comunidades" element={<AppDaComunidades />} />
           <Route path="/SobreNos" element={<SobreNos />} />
-
         </Routes>
-        <footer>
           <Footer/>
-        </footer>
       </Router>
     </>
   );

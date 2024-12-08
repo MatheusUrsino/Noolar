@@ -1,130 +1,122 @@
+/* Estilos gerais */
 .footer {
-  overflow-y: hidden;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -3vw;
-    top: 3vw;
-    width: 100vw;
-    align-items: center;
-    background-color: #002C3B;
-    color: white;
-    padding: 3vw 0;
-  }
-  
+  background-color: #004758;
+  color: white;
+  padding: 20px 10px;
+  display: block;
+  position: relative;
+  top: 2vw;
+  left: -2vw;
+
+  width: 100vw;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contact .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  background-color: #004758;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #777;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    flex-direction: column;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
   }
-  
-  .footer-logo img {
-    width: 8rem;
-    margin-bottom: 1rem;
-    transform: translateX(-12vw); /* Move a logo para a esquerda */
-  }
-  
-  
+
   .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 1rem;
-    text-align: left; /* Alinha o texto à esquerda */
-  }
-  
-  .footer-section h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section li {
-    margin: 0.5rem 0;
-  }
-  
-  .footer-contact {
-    display: flex;
-    flex-direction: column; /* Empilha botão e ícones verticalmente */
-    align-items: flex-end; /* Alinha ao lado direito */
-    gap: 1rem; /* Espaçamento entre ícones e botão */
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: flex-end; /* Alinha os ícones à direita */
-    gap: 1rem;
-    position: relative;
-    right: -2.5vw;
-  }
-  
-  .contact-button {
-    background-color: #f36c22;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    position: relative;
-    right: -2.5vw;
-  }
-  
-  .contact-button:hover {
-    background-color: #d65a1c;
-  }
-  
-  .footer-copyright {
-    background-color: #004758;
-    padding: 10px;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-contact {
+    margin-top: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section li {
     font-size: 0.9rem;
-    position: relative;
-    top: 3vw;
   }
-  
-  /* Responsividade */
-  
-  /* Tablets */
-  @media (max-width: 1024px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-contact {
-      align-items: center; /* Centraliza os elementos em telas menores */
-    }
-  
-    .social-icons {
-      justify-content: center;
-    }
+
+  .footer-contact .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  /* Smartphones */
-  @media (max-width: 768px) {
-    .footer-logo img {
-      width: 6rem;
-    }
-  
-    .footer-section h3 {
-      font-size: 1rem;
-    }
-  
-    .footer-section ul {
-      font-size: 0.9rem;
-    }
-  
-    .contact-button {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
+
+  .footer-copyright {
+    font-size: 0.8rem;
   }
+}
