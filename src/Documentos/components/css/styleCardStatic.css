@@ -57,7 +57,7 @@
   }
 
   .DocscardStatic-image {
-    width: 50%; /* A imagem ocupa 70% do card */
+    width: 45%; /* A imagem ocupa 70% do card */
   }
 
   .DocscardStatic-title {
@@ -69,7 +69,7 @@
 @media (max-width: 500px) {
   .DocscardStatic {
     width: 90%; /* A largura do card ocupa 90% */
-    height: 40vh; /* A altura do card é aumentada */
+    height: 45vh; /* A altura do card é aumentada */
     padding: 5vw; /* Aumenta o padding interno */
   }
 

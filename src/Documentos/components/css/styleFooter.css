@@ -39,8 +39,8 @@
         z-index: -1; /* Coloca a imagem atrás do conteúdo */
       }
       .Docserro {
-        margin-top: 15vw;
-
+        margin-bottom: 20vw;
+        margin-top: 30vw;
         width: 7rem;
       }
     }
@@ -55,7 +55,7 @@
         height: 60vh;
       }
       .Docstexto-cuidado {
-        margin-top: 20vw;
+        margin-top: 10vw;
 
         width: 80%;
         font-size: 3vw;
