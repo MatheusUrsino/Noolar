@@ -6,7 +6,6 @@
   background: #E6CFC9;
   color: white;
 
-  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
 }
 
 .linkNavigate
@@ -15,7 +14,3 @@
   text-decoration: inherit;
 }
 
-* {
-  box-sizing: border-box;
-  max-width: 100%;
-}
