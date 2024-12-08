@@ -7,7 +7,6 @@ function SobreNos() {
   return (
     <>
         <h1 id="tituloSobreNos">Valores que fazem a diferença.</h1>
-          <img src="/bgSobreNos.svg" alt="fundo" className="bgSobreNos" />
           <ContentHeaderSobreNos
             iconImage="/starIcon.svg"
             legenda="estrela"
