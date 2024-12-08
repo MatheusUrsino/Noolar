@@ -20,7 +20,8 @@ margin: 0;
 }
 
 @media (max-width: 768px) {
-  body, html {
+  body {
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
