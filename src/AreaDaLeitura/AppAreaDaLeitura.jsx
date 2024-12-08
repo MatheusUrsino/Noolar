@@ -314,33 +314,23 @@ function AppAreaDaLeitura() {
   const livrosRefs = useRef([]);
 
   
+
   return (
     <div className="Leiturapage">
       <AreaDaLeitura />
-  
       <div className="LeituracardsArea">
         {categorias.map((categoria, cardIndex) => (
           <div className="Leituracard" key={cardIndex}>
             <BoxLivros categoria={categoria.nome} textoCard={categoria.textcard} />
-            
-            <Swiper
-              spaceBetween={10} // Espaço entre os itens
-              slidesPerView="4.3" // Exibe os slides de forma automática
-              onSlideChange={(e) => handleSlideChange(e, cardIndex)} // Se necessário, para ações ao mudar o slide
-              className="LeituralivrosSwiper"
-            >
+            <div className="Leituralivros">
               {categoria.livros.map((livro, index) => (
-                <SwiperSlide key={index}>
-                  <Livros {...livro} />
-                </SwiperSlide>
+                <Livros key={index} {...livro} />
               ))}
-            </Swiper>
+            </div>
           </div>
         ))}
       </div>
-   
     </div>
   );
 }
-
 export default AppAreaDaLeitura;
