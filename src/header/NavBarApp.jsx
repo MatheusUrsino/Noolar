@@ -81,7 +81,7 @@ function NavbarApp() {
           <div className="sideBarContent">
             <ItensSideBar link="/AreaDaLeitura" item="Area da Leitura" />
             <ItensSideBar link="/Cursos" item="Cursos" />
-            <ItensSideBar link="/Comunidade" item="Comunidade" />
+            <ItensSideBar link="/Comunidades" item="Comunidade" />
             <a href="https://lingo-lar.vercel.app/" className="linkNavigate sideBarItens">LingoLar</a>
             <ItensSideBar link="/SobreNos" item="Sobre nós" />
             <ItensSideBar link="/Documentos" item="Documentos" />

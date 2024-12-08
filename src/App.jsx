@@ -12,16 +12,16 @@ import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
 import AppDaComunidades from "./ComunidadesArea/AppComunidades.jsx";
 import NavbarApp from "./header/NavBarApp.jsx";
-import Footer from "./footer/Footer.jsx";
+import VLibras from "@djpfs/react-vlibras";
 
 function App() {
   return (
     <>
       <Router>
-        <header>
+        <VLibras forceOnload={true} />
+        <header className="aaaaaaaaaaa">
           <NavbarApp />
         </header>
-
         <Routes>
           <Route path="/" element={<AppMenu />} />
           <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
@@ -32,10 +32,6 @@ function App() {
           />
           <Route path="/Comunidades" element={<AppDaComunidades />} />
         </Routes>
-        <footer classname="rodape">
-            <Footer />
-        </footer>
-       
       </Router>
     </>
   );

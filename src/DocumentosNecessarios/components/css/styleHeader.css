@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.DocsDocsImg {
+.NescessariosDocsImg {
   margin-top: 1%;
   width: 25%;
   height: 25%;
 }
 
-.Docsbox-title {
+.NescessariosDocsbox-title {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -21,7 +21,7 @@
   margin: 9% 15%;
 }
 
-.Docssubtitulo {
+.NescessariosDocssubtitulo {
   margin-top: 1%;
   font-size: 200%;
   font-weight: 400;
@@ -30,13 +30,13 @@
   color: white;
 }
 
-.Docstitulo {
+.NescessariosDocstitulo {
   font-size: 300%;
   margin: 0 0 0.5vw 1vw;
   color: white;
 }
 
-.Docsimagem-container {
+.NecessariosDocsimagem-container {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -46,7 +46,7 @@
   height: fit-content;
 }
 
-.DocsbgImage {
+.NescessariosDocsbgImage {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -57,7 +57,7 @@
   overflow: hidden;
 }
 
-.DocsbgImage img {
+.NescessariosDocsbgImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -65,32 +65,32 @@
 
 
 @media (max-width: 1200px) {
-  .Docsbox-title {
+  .NecessariosDocsbox-title {
     margin: 5vw 10vw;
     top: 4vw;
   }
 
-  .Docssubtitulo {
+  .NecessariosDocssubtitulo {
     font-size: 2vw;
     width: 85%;
     margin-top: vw;
   }
 
-  .Docstitulo {
+  .NescessariosDocstitulo {
     font-size: 4vw;
     margin-bottom: 1vw;
   }
 
-  .Docsimagem-container {
+  .NecessariosDocsimagem-container {
     top: 13vw;
     right: 2vw;
   }
 
-  .DocsbgImage {
+  .NescessariosDocsbgImage {
     top: -10vw;
   }
 
-  .DocsDocsImg {
+  .NecessariosDocsDocsImg {
     width: 25%;
     height: 25%;
   }
@@ -98,32 +98,32 @@
 
 
 @media (max-width: 800px) {
-  .Docsbox-title {
+  .NecessariosDocsbox-title {
     margin: 2vw 10vw;
     top: 4vw;
   }
 
-  .Docssubtitulo {
+  .NescessariosDocssubtitulo {
     font-size: 2vw;
     width: 85%;
     margin-top: vw;
   }
 
-  .Docstitulo {
+  .NescessariosDocstitulo {
     font-size: 5vw;
     margin-bottom: 1vw;
   }
 
-  .Docsimagem-container {
+  .NecessariosDocsimagem-container {
     top: 13vw;
     right: 2vw;
   }
 
-  .DocsbgImage {
+  .NescessariosDocsbgImage {
     top: -10vw;
   }
 
-  .DocsDocsImg {
+  .NecessariosDocsDocsImg {
     width: 25%;
     height: 25%;
   }

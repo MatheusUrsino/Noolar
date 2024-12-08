@@ -10,7 +10,7 @@ function HeaderDocs(props) {
         </div>
         <div className="Docsbox-title">
           <img
-            className="DocsDocsImg"
+            className="DocsImg"
             src="/papel.png"
             alt="Descripción de la Imagen"
           />
