@@ -62,6 +62,10 @@
   gap: 3rem;
 }
 @media (max-width: 1000px) {
+  #tituloSobreNos {
+    margin-top:  10vh;
+    position: relative;
+  }
 /* Estilo do plano de fundo */
 .bgSobreNos {
   margin-top: -40rem;
