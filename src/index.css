@@ -6,8 +6,14 @@
   background: #E6CFC9;
   color: white;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+#root
+{
+  padding: 0;
 
+}
 .linkNavigate
 {
   color: inherit;

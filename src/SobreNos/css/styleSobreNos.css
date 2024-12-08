@@ -1,6 +1,14 @@
+.headerSobreNos {
+  background-color: aquamarine;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
 /* Estilo do título */
 #tituloSobreNos {
-  margin-top:  20vh;
+  background: #000;
+  width: 100vw;
+  margin-top: 20vh;
   position: relative;
 }
 
@@ -49,11 +57,11 @@
   margin-top: 20vh;
   margin-bottom: 10vh;
   height: 100%;
-
 }
 
 /* Estilo dos ícones */
 .iconsSobreNos {
+
   margin-top: 4vh;
   display: flex;
   justify-content: center;
@@ -63,17 +71,14 @@
 }
 @media (max-width: 1000px) {
   #tituloSobreNos {
-    margin-top:  10vh;
+    margin-top: 10vh;
     position: relative;
   }
-/* Estilo do plano de fundo */
-.bgSobreNos {
-  margin-top: -40rem;
-  ;
+  /* Estilo do plano de fundo */
+  .bgSobreNos {
+    margin-top: -40rem;
+  }
 }
-}
-
-
 
 @media (max-width: 600px) {
   .devsSection {

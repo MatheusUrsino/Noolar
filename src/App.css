@@ -10,7 +10,11 @@ html, body {
   max-height: 100%;
   overflow-x: clip;
 }
+#root
+{
+  padding: 0;
 
+}
 .texto {
   font-size: 2.5vw; /* Ajuste do tamanho da fonte */
   align-items: center;

@@ -1,8 +1,10 @@
 .containerIconSobreNos {
   display: flex;
-  align-items: flex-start; /* Alinha o ícone no topo */
+  align-items: center; /* Alinha o ícone no topo */
+  
   overflow: hidden; /* Impede o scroll da imagem de fundo */
   width: 100%;
+  background-color: blueviolet;
 }
 
 .iconSobreNos {
