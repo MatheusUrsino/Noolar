@@ -1,5 +1,6 @@
 .contentComunidade {
   width: 100vw; /* Ocupa a largura total da tela */
+  overflow-x: hidden;
 }
 
 .bgComunidadeHeaderDiv {
