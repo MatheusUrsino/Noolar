@@ -19,3 +19,8 @@ margin: 0;
   text-decoration: inherit;
 }
 
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
