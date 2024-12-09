@@ -12,8 +12,6 @@ interface CardProps {
 function Card({ bgColor, textoFrente, textoVerso, imagemFrente, legendaImagemFrente }: CardProps) {
   const [flipped, setFlipped] = useState(false);
 
-  
-
   const handleMouseEnter = () => {
     setFlipped(true);
   };
@@ -21,28 +19,24 @@ function Card({ bgColor, textoFrente, textoVerso, imagemFrente, legendaImagemFre
   const handleMouseLeave = () => {
     setFlipped(false);
   };
-
+  console.log(flipped);
   return (
     <div
-      className={`Docscard-container ${flipped ? "Docsflipped" : ""}`}
+      className={`DocsNcard-container ${flipped ? "DocsNflipped" : ""}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="Docscard">
-     
-        <div
-          className="Docscard-front"
-          style={{ backgroundColor: bgColor }}
-        >
-          <div className="Docstext">{textoFrente}</div> {/* Texto da frente */}
-          <img src={imagemFrente} alt={legendaImagemFrente} width={100} height={100} className="DocsimageFront"/> {/* Imagem abaixo */}
+      <div className="DocsNcard">
+        <div className="DocsNcard-front" style={{ backgroundColor: bgColor }}>
+          <div className="DocsNtext">{textoFrente}</div>
+          <img src={imagemFrente} alt={legendaImagemFrente} width={100} height={100} className="DocsNimageFront"/>
         </div>
-        <div className="Docscard-back Docstext"
-         style={{ backgroundColor: bgColor }}>
-          {textoVerso} {/* Texto do verso */}
+        <div className="DocsNcard-back DocsNtext" style={{ backgroundColor: bgColor }}>
+          {textoVerso}
         </div>
       </div>
     </div>
+    
   );
 }
 

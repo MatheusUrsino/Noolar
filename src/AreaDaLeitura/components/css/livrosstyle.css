@@ -74,7 +74,6 @@
  /* Estilo para cada item de livro no carrossel */
 .Leituralivro {
   position: relative;
-  margin-right: 2vw; /* Espaçamento à direita entre os livros */
   text-align: center; /* Centraliza o texto do livro */
 }
 
@@ -94,12 +93,16 @@
   margin-top: 0vw; /* Sem margem superior */
   transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
 }
+.Leituralegenda
+{
+  font-size: 2.8vw;
+}
 
 /* Estilo para o parágrafo de cada livro */
 .Leituralivro p {
   opacity: 0; /* Parágrafo invisível inicialmente */
   color: #006182; /* Cor laranja */
-  font-size: 1.5vw; /* Tamanho do parágrafo */
+  font-size: 2.5vw; /* Tamanho do parágrafo */
   margin-top: 0; /* Sem margem superior */
   transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
 }
@@ -113,7 +116,7 @@
 /* Estilo ao passar o mouse sobre o título do livro */
 .Leituralivro:hover h4 {
   opacity: 1; /* Título visível */
-  font-size: 1.8vw; /* Tamanho do título */
+  font-size: 3vw; /* Tamanho do título */
   color: #006182; /* Cor laranja */
   margin-bottom: -0.5vw; /* Margem inferior */
   text-align: center;
@@ -124,7 +127,7 @@
 .Leituralivro:hover p {
   opacity: 1; /* Parágrafo visível */
   color: #006182; /* Cor laranja */
-  font-size: 1.5vw; /* Tamanho do parágrafo */
+  font-size: 2.5vw; /* Tamanho do parágrafo */
   margin-top: 0; /* Sem margem superior */
   text-align: center;
   align-items: center;
@@ -132,8 +135,8 @@
 
 /* Estilo para a imagem de cada livro */
 .LeituraimagemLivro {
-  width: 18vw; /* Largura da imagem */
-  height: 27vw; /* Largura da imagem */
+  width: 28vw; /* Largura da imagem */
+  height: 37vw; /* Largura da imagem */
 
   border-radius: 1vw; /* Bordas arredondadas */
   transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para escala e brilho */

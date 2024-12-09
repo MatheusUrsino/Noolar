@@ -8,8 +8,8 @@ function Livros(props) {
       <img className='LeituraimagemLivro' src={props.image} alt={props.desc} draggable="false" />
     </a>
     <div className="Leituralegenda">
-    <h4 >{props.titulo}</h4>
-    <p  >{props.autor}</p>
+    <h4>{props.titulo}</h4>
+    <p >{props.autor}</p>
     </div>
   </div>
 );

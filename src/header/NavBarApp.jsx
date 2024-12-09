@@ -53,8 +53,10 @@ function NavbarApp() {
             <ItensNavBar link="/Doacao" item="Doação" />
           </div>
           <div className="userArea">
-            <SignedOut>
-              <SignInButton />
+            <SignedOut className="signInClerk">
+              <SignInButton className="signInClerk">
+                Entrar
+              </SignInButton>
             </SignedOut>
             <SignedIn>
               <UserButton />
@@ -88,8 +90,10 @@ function NavbarApp() {
             <ItensSideBar link="/Doacao" item="Doação" />
           </div>
           <div className="sideBaruserArea">
-            <SignedOut>
-              <SignInButton />
+          <SignedOut className="signInClerk">
+              <SignInButton className="signInClerk">
+                Entrar
+              </SignInButton>
             </SignedOut>
             <SignedIn>
               <UserButton />

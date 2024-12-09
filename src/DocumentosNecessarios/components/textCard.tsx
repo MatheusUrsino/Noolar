@@ -3,10 +3,10 @@ import "./css/styleTextCard.css";
 
 function TextCard(props) {
   return (
-    <div className="DocsNeedbox-livros">
-      <div className="Docscard">
-        <p className="DocstextoDoCard">{props.textoCard}</p>
-        <div className="Docslivros"></div>
+    <div className="DocsNNeedbox-livros">
+      <div className="DocsNcard">
+        <p className="DocsNtextoDoCard">{props.textoCard}</p>
+        <div className="DocsNlivros"></div>
       </div>
     </div>
   );

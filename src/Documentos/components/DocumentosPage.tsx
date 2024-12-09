@@ -66,7 +66,7 @@ function DocsPage() {
             />
           </div>
           <div className="Docstexto">
-            <h2 className="DocshighlightBlue">Perguntas Frequentes:</h2>
+            <h2 className="DocshighlightBlue textDocs">Perguntas Frequentes:</h2>
           </div>
           <div className="DocscontentSection">
             <Card

@@ -1,3 +1,32 @@
+/* Estilo geral do botão de login Clerk */
+.signInClerk {
+  border: none;
+  background: linear-gradient(45deg, #f6794a, #f25d27);
+  color: aliceblue;
+  padding: 0.4vw 0.5vw; /* Menos padding para reduzir o tamanho */
+  border-radius: 25px; /* Bordas arredondadas mais sutis */
+  font-size: 0.5rem; /* Fonte um pouco menor */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2px; /* Menos espaçamento entre letras */
+  cursor: pointer;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35); /* Sombra mais suave */
+  transition: all 0.2s ease; /* Transição mais rápida */
+}
+
+.signInClerk:hover {
+  background: linear-gradient(45deg, #f25d27, #f6794a);
+  transform: translateY(-2px); /* Levanta um pouco no hover */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signInClerk:active {
+  transform: translateY(1px); /* Efeito de pressionamento mais leve */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
 /* Navbar Principal */
 .headerApp {
   overflow-y: hidden;
@@ -19,15 +48,15 @@
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    gap: 4vw;
+    gap: 2vw;
     flex-direction: row;
   }
   
   .opcoes {
+    justify-content: space-around;
     width: 100%;
-    margin-left: 6.5vw;
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -77,7 +106,7 @@
     display: flex;
    position: relative;
    margin-left: 1vw;
-    font-size: 24px;
+    font-size: 18px;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -93,7 +122,7 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 4vw;
+    margin-right: 2vw;
     margin-top: auto;
     margin-bottom: auto;
   }

@@ -6,23 +6,23 @@ import Card from "./card";
 function DocsNecessariosPage() {
   return (
     <>
-      <div className="content">
-        <div className="header">
+      <div className="DocsNcontent">
+        <div className="DocsNDocsNheader">
           <HeaderDocs />
         </div>
         
-        <div className="section">
+        <div className="DocsNsection">
             
           <TextCard
             textoCard={
               <>
                 Conheça e providencie de forma correta para que tenha uma{" "}
-                <span className="highlightAqua">integração adequada</span> e{" "}
-                <span className="highlightOrange">tranquila</span> no país!{" "}
+                <span className="DocsNhighlightAqua">integração adequada</span> e{" "}
+                <span className="DocsNhighlightOrange">tranquila</span> no país!{" "}
               </>
             }
           />
-          <div className="contentSection">
+          <div className="DocsNcontentSection">
            
             <Card
               bgColor="#198168"

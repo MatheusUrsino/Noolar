@@ -1,4 +1,4 @@
-import React, { useRef } from "react"; 
+import React, { useRef, useState  } from "react"; 
 import "./components/css/AreaDaLeitura.css";
 import AreaDaLeitura from "./components/Inicio";
 import BoxLivros from "./components/Categorias";
@@ -312,8 +312,29 @@ textcard: (
 
 function AppAreaDaLeitura() {
   const livrosRefs = useRef([]);
+  const [isMouseDown, setIsMouseDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
-  
+  const handleMouseDown = (e) => {
+    setIsMouseDown(true);
+    setStartX(e.clientX);
+    setScrollLeft(e.target.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMouseDown(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseDown(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isMouseDown) return;
+    const distance = e.clientX - startX;
+    e.target.scrollLeft = scrollLeft - distance;
+  };
 
   return (
     <div className="Leiturapage">
@@ -322,7 +343,15 @@ function AppAreaDaLeitura() {
         {categorias.map((categoria, cardIndex) => (
           <div className="Leituracard" key={cardIndex}>
             <BoxLivros categoria={categoria.nome} textoCard={categoria.textcard} />
-            <div className="Leituralivros">
+            <div
+              className="Leituralivros"
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+              style={{ overflowX: "auto", cursor: "grab" }}
+              ref={(el) => livrosRefs.current[cardIndex] = el} // Adiciona a referência ao array de refs
+            >
               {categoria.livros.map((livro, index) => (
                 <Livros key={index} {...livro} />
               ))}
@@ -333,4 +362,5 @@ function AppAreaDaLeitura() {
     </div>
   );
 }
+
 export default AppAreaDaLeitura;

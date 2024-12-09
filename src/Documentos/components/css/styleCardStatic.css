@@ -69,7 +69,7 @@
 @media (max-width: 500px) {
   .DocscardStatic {
     width: 90%; /* A largura do card ocupa 90% */
-    height: 45vh; /* A altura do card é aumentada */
+    height: 35vh; /* A altura do card é aumentada */
     padding: 5vw; /* Aumenta o padding interno */
   }
 

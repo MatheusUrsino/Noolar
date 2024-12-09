@@ -1,5 +1,5 @@
 /* Estilos para o texto exibido no card */
-.DocstextoDoCard {
+.DocsNtextoDoCard {
   margin-bottom: 5vw;
   color: #006182; /* Cor do texto */
   width: 40vw; /* Largura da caixa de texto */
@@ -11,7 +11,7 @@
 }
 
 /* Estilos para a caixa de livros */
-.DocsNeedbox-livros {
+.DocsNNeedbox-livros {
   display: flex; /* Flexbox para organizar os elementos */
   flex-direction: column; /* Empilha verticalmente */
   position: relative; /* Posição relativa */
@@ -22,14 +22,14 @@
 
 /* Responsividade para dispositivos com largura menor que 800px */
 @media (max-width: 800px) {
-  .DocstextoDoCard {
+  .DocsNtextoDoCard {
     width: 70vw; /* Largura maior para dispositivos menores */
     font-size: 3vw; /* Fonte proporcional à viewport */
   }
 }
 
 /* Estilos para o texto exibido no card */
-.DocstextoDoCardDireita {
+.DocsNtextoDoCardDireita {
   margin-left: auto; /* Empurra o card para a direita */
   color: #006182; /* Cor do texto */
   width: 40vw; /* Largura da caixa de texto */
@@ -43,7 +43,7 @@
 }
 
 /* Estilos para a caixa de livros */
-.Docsbox-livrosDireita {
+.DocsNbox-livrosDireita {
   display: flex; /* Flexbox para organizar os elementos */
   flex-direction: column; /* Empilha verticalmente */
   position: relative; /* Posição relativa */
@@ -55,7 +55,7 @@
 
 /* Responsividade para dispositivos com largura menor que 800px */
 @media (max-width: 800px) {
-  .DocstextoDoCardDireita {
+  .DocsNtextoDoCardDireita {
     width: 70vw; /* Largura maior para dispositivos menores */
     font-size: 3vw; /* Fonte proporcional à viewport */
   }
