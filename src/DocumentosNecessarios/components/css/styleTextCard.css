@@ -11,13 +11,13 @@
 }
 
 /* Estilos para a caixa de livros */
-.Docsbox-livros {
+.DocsNeedbox-livros {
   display: flex; /* Flexbox para organizar os elementos */
   flex-direction: column; /* Empilha verticalmente */
   position: relative; /* Posição relativa */
   left: 0vw;
   text-align: left; /* Alinhamento do texto à esquerda */
-  margin-top: 30vw; /* Espaçamento superior */
+  margin-top: 10vw; /* Espaçamento superior */
 }
 
 /* Responsividade para dispositivos com largura menor que 800px */

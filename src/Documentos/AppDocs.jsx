@@ -1,13 +1,13 @@
 
 import "./AppDocumentos.css";
-import DocsNecessariosPage from "./components/DocumentosPage";
+import DocsPage from "./components/DocumentosPage";
 
 
 function AppDocs() {
 
   return (
     <>
-   <DocsNecessariosPage/>
+   <DocsPage/>
     </>
   );
 }

@@ -5,7 +5,7 @@ import "../AppDocumentos.css";
 import Card from "./card";
 import CardStatic from "./cardStatic";
 import Footer from "./final";
-function DocsNecessariosPage() {
+function DocsPage() {
   return (
     <>
       <div className="Docscontent">
@@ -107,4 +107,4 @@ function DocsNecessariosPage() {
   );
 }
 
-export default DocsNecessariosPage;
+export default DocsPage;
