@@ -6,7 +6,6 @@ function Footer() {
     <footer className="Docsfooter">
       <div className="Docsrodap-item">
           <img className="Docserro" src="/erro.png" alt="Ícone de erro" />
-          <img className="DocsBg" src="/fundo2.png" alt="Ícone de erro" />
 
           <span className="Docstexto-cuidado">Cuidado com pessoas que solicitam taxas antecipadas em troca de serviços de documentação!</span>
       </div>

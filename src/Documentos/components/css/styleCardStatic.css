@@ -1,7 +1,7 @@
 /* Estilos do cardStatic */
 .DocscardStatic {
   width: 30vw; /* Largura do card */
-  height: 50vh;
+  height: 100%; /* Aumenta a altura do card */
   padding: 2vw; /* Espaçamento interno do card */
   border-radius: 15px; /* Arredondamento dos cantos */
   background: linear-gradient(160deg, rgba(25, 129, 104, 1) 0%, rgba(0, 97, 130, 1) 100%);
@@ -36,7 +36,7 @@
 @media (max-width: 1200px) {
   .DocscardStatic {
     width: 75%; /* Aumenta a largura do card para 60% */
-    height: 30vh; /* Aumenta a altura do card */
+    height: 100%; /* Aumenta a altura do card */
   }
 
   .DocscardStatic-image {
@@ -52,7 +52,7 @@
 @media (max-width: 800px) {
   .DocscardStatic {
     width: 80%; /* A largura do card aumenta para 80% */
-    height: 50vh; /* A altura do card aumenta para 70% */
+    height: 100%; /* Aumenta a altura do card */
     padding: 4vw; /* Aumenta o espaçamento interno */
   }
 
@@ -69,7 +69,7 @@
 @media (max-width: 500px) {
   .DocscardStatic {
     width: 90%; /* A largura do card ocupa 90% */
-    height: 35vh; /* A altura do card é aumentada */
+    height: 100%; /* Aumenta a altura do card */
     padding: 5vw; /* Aumenta o padding interno */
   }
 

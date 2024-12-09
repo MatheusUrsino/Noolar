@@ -74,6 +74,11 @@
     .DocscontentSectionFirst {
       grid-template-columns: repeat(2, 1fr); /* 2 colunas */
       margin-bottom: 15vw;
+      font-size: 1.5vw;
+
+    }
+    .DocscontentSectionFirst img{
+      width: 10vw;
   
     }
   }
@@ -83,11 +88,31 @@
     .DocscontentSectionFirst {
       grid-template-columns: 1fr; /* 1 coluna */
       gap: 3% 0; /* Ajuste de espaçamento */
-      margin-bottom: 50vw;
+      margin-bottom: 40vw;
+      font-size: 2vw;
+  
+    }
+    .DocscontentSectionFirst img{
+      width: 20vw;
   
     }
   }
   
+    
+  /* Responsividade para telas menores que 800px */
+  @media (max-width: 500px) {
+    .DocscontentSectionFirst {
+      grid-template-columns: 1fr; /* 1 coluna */
+      gap: 3% 0; /* Ajuste de espaçamento */
+      margin-bottom: 40vw;
+      font-size: 4vw;
+  
+    }
+    .DocscontentSectionFirst img{
+      width: 20vw;
+  
+    }
+  }
   
   /* Layout responsivo para a seção dos cards */
   .DocscontentSection {

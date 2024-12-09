@@ -13,8 +13,10 @@
     font-size: 3vw;
   }
   .Docsrodap-item {
-    margin-top: 40vw;
-
+    margin-top: 10vw;
+    background-image: url("/fundo2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
