@@ -1,20 +1,20 @@
-<svg width="1646" height="1710" viewBox="0 0 1646 1710" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0_2113_231" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-31" y="0" width="1697" height="1710">
-<path d="M1665.63 1710L1665.63 1281.72L1665.63 853.44L1665.63 -3.6478e-05L-30.9999 -0.00011064L-31 1710L712.807 1597.24C783.603 1586.51 855.627 1586.7 926.364 1597.81L1465.63 1682.53L1665.63 1710Z" fill="url(#paint0_linear_2113_231)"/>
+<svg width="1200" height="600" viewBox="0 0 1239 1920" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_2113_231" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1239" height="1920">
+<path d="M1239 1920L1239 1439.12L1239 958.248L1239 -1.75238e-05L0.945469 -7.16409e-05L0.945385 1920L459.764 1812.97C566.216 1788.14 677.003 1788.59 783.252 1814.27L1093.06 1889.16L1239 1920Z" fill="url(#paint0_linear_2113_231)"/>
 </mask>
 <g mask="url(#mask0_2113_231)">
-<rect width="1709.07" height="1695" transform="matrix(-0.0012178 -0.999999 -1 0.00035884 1694.72 1702.71)" fill="url(#pattern0_2113_231)" fill-opacity="0.55"/>
-<path d="M1665.63 1710L1665.63 1281.72L1665.63 853.44L1665.63 -3.6478e-05L-30.9999 -0.00011064L-31 1710L712.807 1597.24C783.603 1586.51 855.627 1586.7 926.364 1597.81L1465.63 1682.53L1665.63 1710Z" fill="url(#paint1_linear_2113_231)" fill-opacity="0.75"/>
+<rect width="1918.96" height="1236.87" transform="matrix(-0.000791434 -1 -1 0.000552168 1237.56 1918.95)" fill="url(#pattern0_2113_231)" fill-opacity="0.55"/>
+<path d="M1239 1920L1239 1439.12L1239 958.248L1239 2.81334e-05L0.945546 -2.59837e-05L0.945462 1920L459.764 1812.97C566.216 1788.14 677.003 1788.59 783.252 1814.27L1093.06 1889.16L1239 1920Z" fill="url(#paint1_linear_2113_231)" fill-opacity="0.75"/>
 </g>
 <defs>
 <pattern id="pattern0_2113_231" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2113_231" transform="matrix(0.000495885 0 0 0.0005 -0.243828 0)"/>
+<use xlink:href="#image0_2113_231" transform="matrix(0.000333333 0 0 0.000517155 0 -0.0171546)"/>
 </pattern>
-<linearGradient id="paint0_linear_2113_231" x1="855.503" y1="25.5987" x2="1038.05" y2="1738.28" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_2113_231" x1="647.839" y1="28.7424" x2="958.449" y2="1922.66" gradientUnits="userSpaceOnUse">
 <stop stop-color="#198168"/>
 <stop offset="1" stop-color="#006182"/>
 </linearGradient>
-<linearGradient id="paint1_linear_2113_231" x1="855.503" y1="25.5987" x2="1038.05" y2="1738.28" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_2113_231" x1="647.839" y1="28.7424" x2="958.449" y2="1922.66" gradientUnits="userSpaceOnUse">
 <stop stop-color="#002C3B"/>
 <stop offset="1" stop-color="#198168"/>
 </linearGradient>

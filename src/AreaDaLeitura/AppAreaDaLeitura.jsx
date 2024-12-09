@@ -242,68 +242,68 @@ const categorias = [
 
     livros: [
       {
-        titulo: "Desenvolvimento Pessoal e Profissional",
-        autor: "Carlos Silva",
+        titulo: "Profissão: assistente social",
+        autor: "Corrêa Netto",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/9/9d/Desenvolvimento_Pessoal.jpg",
+          "https://m.media-amazon.com/images/I/71fnk44pHPL._UF894,1000_QL80_.jpg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/DesenvolvimentoPessoalEProfissional.pdf",
+        pdf: "https://static.scielo.org/scielobooks/8vr6k/pdf/correa-9788579830839.pdf",
       },
       {
-        titulo: "Gestão de Carreira",
-        autor: "Patricia Costa",
+        titulo: "Ética profissional na tradução assistida por sistemas de memórias",
+        autor: "Érika Nogueira",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/a/a0/Gestao_de_Carreira.jpg",
+          "https://editoraunesp.com.br/catalogo/9788568334461,etica-profissional-na-traducao-assistida-por-sistemas-de-memorias/capa",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/GestaoDeCarreira.pdf",
+        pdf: "https://static.scielo.org/scielobooks/2fpsy/pdf/stupiello-9788568334461.pdf",
       },
       {
-        titulo: "Comunicação Eficaz no Ambiente Corporativo",
-        autor: "Rafael Almeida",
+        titulo: "Bioética para profissionais da saúde",
+        autor: "Sergio Rego",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/2/24/Comunicacao_Eficaz.jpg",
+          "https://m.media-amazon.com/images/I/91y06135YGL._UF894,1000_QL80_.jpg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/ComunicacaoEficaz.pdf",
+        pdf: "https://books.scielo.org/id/33937/pdf/rego-9788575413906.pdf",
       },
       {
-        titulo: "Gestão de Projetos para Iniciantes",
-        autor: "Fernanda Martins",
+        titulo: "Participação e responsabilidade no jornalismo público",
+        autor: "Daniele Ferreira",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/7/70/Gestao_de_Projetos.jpg",
+          "https://www.culturaacademica.com.br/wp-content/uploads/2022/10/978-65-5954-246-8_Participacao_e_responsabilidade-CAPA-scaled.jpg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/GestaoDeProjetos.pdf",
+        pdf: "https://books.scielo.org/id/w9324/pdf/seridorio-9786559542468.pdf",
       },
       {
-        titulo: "Liderança e Motivação",
-        autor: "Eduardo Lima",
+        titulo: "Empreendedorismo estudos teórico-empíricos no semiárido",
+        autor: "Agostinha Mafalda",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/6/63/Lideranca_Motivacao.jpg",
+          "https://books.scielo.org/id/yw9zf/cover/cover.jpeg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/LiderancaEMotivacao.pdf",
+        pdf: "https://books.scielo.org/id/yw9zf/pdf/oliveira-9786587108667.pdf",
       },
       {
-        titulo: "Empreendedorismo e Inovação",
-        autor: "Joana Rocha",
+        titulo: "A formação Médica na Unifesp",
+        autor: "Rosana Fiorini",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/8/81/Empreendedorismo_Inovacao.jpg",
+          "https://books.scielo.org/id/q8g25/cover/cover.jpeg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/EmpreendedorismoEInovacao.pdf",
+        pdf: "https://static.scielo.org/scielobooks/q8g25/pdf/puccini-9788561673666.pdf",
       },
       {
-        titulo: "Marketing Digital para Profissionais",
-        autor: "Ricardo Souza",
+        titulo: "As Interfaces do direito agrário e dos direitos humanos",
+        autor: "Elisabete Maniglia",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Marketing_Digital.jpg",
+          "https://m.media-amazon.com/images/I/71FejyldLLL._UF894,1000_QL80_.jpg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/MarketingDigitalParaProfissionais.pdf",
+        pdf: "https://static.scielo.org/scielobooks/s3vn9/pdf/maniglia-9788579830143.pdf",
       },
       {
-        titulo: "Finanças Pessoais para Executivos",
-        autor: "Laura Pereira",
+        titulo: "Arquitetura e educação: campus universitários Brasileiros",
+        autor: "Gelson de Almeida",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/9/94/Financas_Pessoais.jpg",
+          "https://m.media-amazon.com/images/I/61NRQ3uZffL._AC_UF1000,1000_QL80_.jpg",
         desc: "Capa do livro",
-        pdf: "/Livros/FormacaoProfissional/FinancasPessoaisParaExecutivos.pdf",
+        pdf: "https://books.scielo.org/id/5kgsm/pdf/pinto-9788576003748.pdf",
       },
     ],
   },
@@ -338,7 +338,6 @@ function AppAreaDaLeitura() {
   return (
     <div className="Leiturapage">
       <AreaDaLeitura />
-      <div className="LeituracardsArea">
         {categorias.map((categoria, cardIndex) => (
           <div className="Leituracard" key={cardIndex}>
             <BoxLivros
@@ -361,7 +360,6 @@ function AppAreaDaLeitura() {
           </div>
         ))}
       </div>
-    </div>
   );
 }
 

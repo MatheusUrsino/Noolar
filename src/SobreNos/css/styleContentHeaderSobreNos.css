@@ -41,8 +41,7 @@
 
 .sectionTexts {
   overflow: hidden;
-
-  margin-top: 3vh;
+  margin-top: 4vh;
   margin-right: 2vh;
   overflow: hidden; /* Impede o scroll da imagem de fundo */
 }
@@ -53,6 +52,7 @@
     align-items: flex-start; /* Alinha o ícone no topo */
     overflow: hidden; /* Impede o scroll da imagem de fundo */
     width: 100%;
+    margin-bottom: 10vw;
   }
 
   .subtitleSobreNos {
@@ -60,7 +60,16 @@
 
     text-align: left;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: bold;
+  }
+  .textSobreNos {
+    text-align: left;
+    margin: 0; /* Remove margens adicionais */
+    overflow: hidden; /* Impede o scroll da imagem de fundo */
+    font-size: 0.5rem;
+    width: 100%;
+  
+    color: #fff;
   }
 }

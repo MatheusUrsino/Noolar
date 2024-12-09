@@ -7,8 +7,8 @@ function ContentHeaderSobreNos(props) {
         src={props.iconImage}
         alt={props.legenda}
         className="iconSobreNos"
-        width={128}
-        height={128}
+        width={90}
+        height={90}
       />
       <div className="sectionTexts">
         <h2 className="subtitleSobreNos">{props.title}</h2>
