@@ -4,10 +4,12 @@ import Cards from './Card';
 
 import './css/MainMenuStyle.css';
 
+
 function AppMenu() {
   return (
     <div className="app-container">
       <header className="hero">
+
         <h1 className="hero__title">Noolar</h1>
         <p className="hero__subtitle">
           Um lar acolhedor para

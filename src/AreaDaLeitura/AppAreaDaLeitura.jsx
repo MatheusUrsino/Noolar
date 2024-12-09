@@ -1,11 +1,12 @@
-import React, { useRef, useState  } from "react"; 
+import React, { useRef, useState } from "react";
 import "./components/css/AreaDaLeitura.css";
 import AreaDaLeitura from "./components/Inicio";
 import BoxLivros from "./components/Categorias";
 import Livros from "./components/Livros";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import CardFlip from "../components/CardFlip";
 // Definindo as categorias e livros com título, autor, imagem e descrição
 // Definindo as categorias e livros com título, autor, imagem e descrição
 const categorias = [
@@ -13,10 +14,10 @@ const categorias = [
     nome: "Literatura Brasileira",
     textcard: (
       <>
-        Mejora tu <span className="Leiturahighlight">Comprensión</span> del idioma,{" "}
-        <span className="Leiturahighlight">amplía</span> tu vocabulario y{" "}
-        <span className="Leiturahighlight">escribe</span> de manera más clara y
-        precisa!
+        Mejora tu <span className="Leiturahighlight">Comprensión</span> del
+        idioma, <span className="Leiturahighlight">amplía</span> tu vocabulario
+        y <span className="Leiturahighlight">escribe</span> de manera más clara
+        y precisa!
       </>
     ),
     livros: [
@@ -88,8 +89,8 @@ const categorias = [
     nome: "Literatura Estrangeira",
     textcard: (
       <>
-        Viaja <span className="Leiturahighlight">por las páginas</span> de los mayores
-        clásicos de la literatura mundial,{" "}
+        Viaja <span className="Leiturahighlight">por las páginas</span> de los
+        mayores clásicos de la literatura mundial,{" "}
         <span className="Leiturahighlight">descubre</span> nuevas culturas y{" "}
         <span className="Leiturahighlight">amplía</span> tu visión del mundo!
       </>
@@ -163,14 +164,14 @@ const categorias = [
   },
   {
     nome: "Literatura Infantil",
-textcard: (
-  <>
-    Enamórate de historias <span className="Leiturahighlight">mágicas</span> y{" "}
-    <span className="Leiturahighlight">divertidas</span>, que despiertan la
-    imaginación y <span className="Leiturahighlight">enseñan</span> valores
-    importantes para los niños!
-  </>
-),
+    textcard: (
+      <>
+        Enamórate de historias <span className="Leiturahighlight">mágicas</span>{" "}
+        y <span className="Leiturahighlight">divertidas</span>, que despiertan
+        la imaginación y <span className="Leiturahighlight">enseñan</span>{" "}
+        valores importantes para los niños!
+      </>
+    ),
     livros: [
       {
         titulo: "O Pequeno Príncipe",
@@ -234,12 +235,12 @@ textcard: (
     textcard: (
       <>
         Aprende a <span className="Leiturahighlight">impulsar</span> tu carrera,{" "}
-        <span className="Leiturahighlight">desarrolla</span> habilidades valiosas y{" "}
-        <span className="Leiturahighlight">conquista</span> nuevos desafíos
-        profesionales con estas lecturas!
+        <span className="Leiturahighlight">desarrolla</span> habilidades
+        valiosas y <span className="Leiturahighlight">conquista</span> nuevos
+        desafíos profesionales con estas lecturas!
       </>
     ),
-    
+
     livros: [
       {
         titulo: "Desenvolvimento Pessoal e Profissional",
@@ -309,7 +310,6 @@ textcard: (
   },
 ];
 
-
 function AppAreaDaLeitura() {
   const livrosRefs = useRef([]);
   const [isMouseDown, setIsMouseDown] = useState(false);
@@ -342,7 +342,10 @@ function AppAreaDaLeitura() {
       <div className="LeituracardsArea">
         {categorias.map((categoria, cardIndex) => (
           <div className="Leituracard" key={cardIndex}>
-            <BoxLivros categoria={categoria.nome} textoCard={categoria.textcard} />
+            <BoxLivros
+              categoria={categoria.nome}
+              textoCard={categoria.textcard}
+            />
             <div
               className="Leituralivros"
               onMouseDown={handleMouseDown}
@@ -350,7 +353,7 @@ function AppAreaDaLeitura() {
               onMouseUp={handleMouseUp}
               onMouseMove={handleMouseMove}
               style={{ overflowX: "auto", cursor: "grab" }}
-              ref={(el) => livrosRefs.current[cardIndex] = el} // Adiciona a referência ao array de refs
+              ref={(el) => (livrosRefs.current[cardIndex] = el)} // Adiciona a referência ao array de refs
             >
               {categoria.livros.map((livro, index) => (
                 <Livros key={index} {...livro} />
