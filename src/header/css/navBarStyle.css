@@ -34,7 +34,7 @@ z-index: 100;
   display: flex;
   position: absolute;
   width: 100%;
-  height: 5vw;
+  height: 8vw;
   background-color: #002c3b;
 }
 
@@ -42,8 +42,8 @@ z-index: 100;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 3.0vw;
-  height: 2.2vw;
+  width: 4.0vw;
+  height: 3.2vw;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -52,7 +52,7 @@ z-index: 100;
 
 .hamburger span {
   display: block;
-  height: 0.4vw;
+  height: 0.7vw;
   width: 100%;
   
   background-color: #f6794a;
@@ -248,7 +248,7 @@ height: 100%;
       display: flex;
       position: absolute;
       width: 100%;
-      height: 8vw;
+      height: 10vw;
       background-color: #002c3b;
     }
     
