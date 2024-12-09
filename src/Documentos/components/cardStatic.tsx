@@ -8,7 +8,7 @@ function CardStatic(props) {
     window.scrollTo(0, 0);
   };
   return (
-    <Link to="/DocumentosNecessarios" onClick={handleClick} className='linkNavigate DocscardStatic'>
+    <Link to={props.caminho} onClick={handleClick} className='linkNavigate DocscardStatic'>
     <img 
       src={props.imagem} 
       alt={props.legenda} 

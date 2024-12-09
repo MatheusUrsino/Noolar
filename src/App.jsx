@@ -22,10 +22,10 @@ function App() {
             <Route path="/" element={<AppMenu />} />
             <Route path="/AreaDaLeitura" element={<AppAreaDaLeitura />} />
             <Route path="/Documentos" element={<AppDocs />} />
-            <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
+            <Route path="/Documentos/DocumentosNecessarios" element={<AppDocsNecessarios />} />
             <Route path="/Comunidades" element={<AppDaComunidades />} />
             <Route path="/SobreNos" element={<SobreNos />} />
-            <Route path="/Servicos" element={<AppServicos />} />
+            <Route path="/Documentos/Servicos" element={<AppServicos />} />
 
           </Routes>
         </main>

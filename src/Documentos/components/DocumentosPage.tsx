@@ -53,16 +53,19 @@ function DocsPage() {
               imagem="/Documentos.svg"
               legenda="Documentos"
               titulo="Documentação Necessária"
+              caminho="DocumentosNecessarios"
             />
             <CardStatic
               imagem="/hospital.png"
               legenda="Documentos"
               titulo="Serviços Públicos"
+              caminho="Servicos"
             />
             <CardStatic
               imagem="/direitos.png"
               legenda="Documentos"
               titulo="Direitos e Deveres do imigrante"
+              caminho="DocumentosNecessarios"
             />
           </div>
           <div className="Docstexto">
