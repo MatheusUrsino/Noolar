@@ -8,6 +8,7 @@ import AppDaComunidades from "./ComunidadesArea/AppComunidades.jsx";
 import NavbarApp from "./header/NavBarApp.jsx";
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
+import AppServicos from "./Servicos/AppServicos.jsx";
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
             <Route path="/DocumentosNecessarios" element={<AppDocsNecessarios />} />
             <Route path="/Comunidades" element={<AppDaComunidades />} />
             <Route path="/SobreNos" element={<SobreNos />} />
+            <Route path="/Servicos" element={<AppServicos />} />
+
           </Routes>
         </main>
         <footer>
