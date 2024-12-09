@@ -4,8 +4,7 @@
   color: white;
   padding: 20px 10px;
   display: block;
-  position: relative;
-  top: 0vw;
+  position: absolute;
   left: 0vw;
 
   width: 100vw;

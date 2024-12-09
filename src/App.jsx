@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AppMenu from "./menu-noolar/MenuPrincipalNoolar/components/menu";
 import AppAreaDaLeitura from "./AreaDaLeitura/AppAreaDaLeitura";
 import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
@@ -9,6 +8,7 @@ import NavbarApp from "./header/NavBarApp.jsx";
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppServicos from "./Servicos/AppServicos.jsx";
+import AppMenu from "./MainMenu/components/menu.jsx";
 
 function App() {
 

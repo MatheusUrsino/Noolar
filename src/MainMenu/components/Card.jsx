@@ -9,7 +9,7 @@ function Cards({ title, description, imageUrl, bgColor, buttonText, destino }) {
 
 
   return (
-    <div className="card-container" style={{ backgroundColor: bgColor }}>
+    <div className="card-container">
       <img src={imageUrl} alt={title} className="card-image" />
       <h3 className="card-title">{title}</h3>
       <p className="card-text">{description}</p>

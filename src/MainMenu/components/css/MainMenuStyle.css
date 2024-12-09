@@ -1,0 +1,694 @@
+/* MainMenuStyle.css */
+
+body {
+  margin: 0;
+}
+
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_container {
+  padding-top: 6rem;
+  background-image: url('../../../../../public/images/bgOficial.png');
+  background-size: 100% 100%;
+  min-height: 125vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 2rem;
+  translate: 0 -4rem;
+}
+
+.hero_text {
+  text-align: left;
+  translate: 0 -4rem
+}
+
+.hero__title {
+  font-size: 5em;
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  font-size: 2.5em;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+.highlight {
+  color: #F6794A;
+  font-weight: bold;
+}
+
+
+.hero__globe {
+  max-width: 500px;
+  height: auto;
+}
+
+/* Estilos principais para dispositivos móveis */
+@media (max-width: 480px) {
+  .hero_container {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    text-align: center; /* Centraliza o texto para melhor legibilidade */
+    translate: 0 0; /* Remove o deslocamento */
+  }
+
+  .hero_text {
+    text-align: center; /* Ajusta o alinhamento para centralizar */
+    translate: 0 0; /* Remove o deslocamento */
+  }
+
+  .hero__title {
+    margin: 0;
+  }
+
+  .hero__subtitle {
+    font-size: 4vw; /* Escala o subtítulo para telas menores */
+    margin-top: 5px;
+    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+  }
+
+  .hero__globe {
+    width: 60vw; /* Ajusta o tamanho da imagem */
+    max-width: 200px; /* Limita o tamanho máximo da imagem */
+    height: auto;
+  }
+
+  .highlight {
+    color: #F6794A;
+    font-weight: bold;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero_container {
+    background-size: 100% 100%;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .hero__globe {
+    width: 30vw;
+    min-width: 10rem;
+  }
+
+  .hero_text {
+    text-align: left;
+    translate: 0 0;
+
+  }
+
+  .hero__title {
+    font-size: 6vw;
+  }
+
+  .hero__subtitle {
+    font-size: 2.6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
+.mission__image {
+  translate: 0 -0.3rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.label_imigrante {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  color: #002C3B;
+  font-weight: 600;
+  flex-direction: column;
+  /* Para alinhar itens verticalmente */
+  height: 200%;
+}
+
+@media (max-width: 768px) {
+  .intro__text {
+    font-size: 4.5vh;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+
+  .intro {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .intro__text {
+    font-size: 1.2rem; /* Ajusta o tamanho do texto para telas pequenas */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    padding: 0.4rem;
+  }
+
+
+}
+
+/* Mission Section */
+.mission {
+  z-index: 10;
+  position: relative;
+  /* Permite o posicionamento absoluto das imagens dentro desta seção */
+  display: flex;
+  /* Ajusta o conteúdo interno caso precise */
+  justify-content: center;
+  /* Centraliza as imagens horizontalmente */
+  align-items: center;
+  /* Centraliza as imagens verticalmente */
+  width: 100%;
+  /* Define o espaço da seção */
+}
+
+.mission__content {
+  flex: 2;
+  padding: 20px;
+}
+
+.mission__title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #198168;
+  margin-bottom: 10px;
+}
+
+.mission__description {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: #002C3B;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  padding: 40px 20px;
+}
+
+.card-container {
+  position: relative;
+  background-color: white;
+  border-radius: 32px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  height: 350px;
+
+}
+
+
+
+.card-title {
+  color: #198168;
+}
+
+.card-image {
+  height: 140px;
+  width: 140px;
+}
+
+.card-button {
+  position: relative;
+  border: none;
+  border-radius: 9px;
+  background-color: #F6794A;
+  height: 40px;
+  padding: 10px;
+  width: 60%;
+  margin: 2rem 0rem 0rem 0rem;
+  cursor: pointer;
+  bottom: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  color: black;
+  width: 90%;
+}
+
+.features__grid {
+  margin-top: 2rem;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 70%;
+}
+
+@media (max-width:768px) {
+  .mission__title {
+    font-size: 5vh;
+  }
+
+  .mission__description {
+    font-size: 4vh;
+  }
+
+  .card-container {
+    min-width: 40%;
+    padding: .5rem;
+    align-items: center;
+    height: 300px;
+
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: .8rem;
+  }
+
+  .card-button {
+    font-size: .8rem;
+  }
+
+  .features__grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission__title {
+    font-size: 4vh;
+  }
+
+  .mission__description {
+    font-size: 2.5vh;
+  }
+
+  .card-container {
+    padding: .5rem;
+    align-items: center;
+    height: 300px;
+  }
+
+  .card-container {
+    min-width: 70%;
+  }
+
+}
+
+/* AI Tool Section */
+.ai-tool {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #E6CFC9;
+
+}
+
+.crosel {
+  color: #2c3e50;
+  height: 60vh;
+  width: 50vw;
+}
+
+.carrosel_card {
+  border-radius: 20px;
+  background-image: url("../../../../../public/images/imgfundo.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.carrosel_card_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  gap: 2rem;
+  text-align: left;
+}
+
+.carrosel_img {
+  width: 20%;
+}
+
+.carrosel_botao {
+  width: 100%;
+  background-color: #e74c3c;
+  padding: .6rem;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .ai-tool {
+    display: flex;
+    flex-direction: column; /* Elementos empilhados verticalmente */
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .carrosel_texto {
+    display: none; /* Mantém o texto oculto para design limpo */
+  }
+
+  .carrosel_titulo {
+    font-size: 2rem; /* Aumenta o tamanho do título para melhor visibilidade */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .carrosel_card_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrosel_img {
+    max-width: 20rem; /* Reduz o tamanho máximo para telas menores */
+    width: 90%; /* Usa a maior parte da largura disponível */
+    margin-bottom: 1rem;
+  }
+
+  .carrosel_botao {
+    width: 90%; /* Botão mais largo */
+    font-size: 1rem; /* Texto maior no botão */
+    background-color: #F3B95A;
+    padding: 0.8rem; /* Espaçamento maior para toques */
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .carrosel_botao:hover {
+    background-color: #e5a347; /* Cor levemente diferente ao passar o mouse */
+  }
+
+  .carrosel_botao:focus {
+    outline: 2px solid #fff; /* Destaque para acessibilidade */
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-tool {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+  }
+
+
+  .carrosel_card {
+    border-radius: 20px;
+    background-image: url("../../../../../public/images/imgfundo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carrosel_texto {
+    display: none;
+  }
+
+  .carrosel_titulo {
+    font-size: 1rem;
+  }
+
+  .carrosel_card_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    gap: 0;
+    text-align: center;
+  }
+
+  .carrosel_img {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  .carrosel_botao {
+    width: 80%;
+    font-size: .8rem;
+    background-color: #F3B95A;
+    padding: .3rem;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.ai-tool__content {
+  flex: 2;
+  padding: 20px;
+}
+
+.ai-tool__title {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.ai-tool__description {
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.ai-tool__button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ai-tool__image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Donation Section */
+.donation_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../../../public/images/backing.png");
+  background-size: contain 100%;
+  background-repeat: no-repeat;
+}
+
+.donation {
+  margin-top: 20rem;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 5vh;
+}
+
+.donation__content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.donation__title {
+  text-align: left;
+  font-size: 3em;
+  color: #F3B95A;
+  margin-bottom: 10px;
+}
+
+.donation__description {
+  text-align: left;
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.donation__button {
+  max-width: 9em;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #F3B95A;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.donation__image {
+  height: 25rem;
+  width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donation__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Mantém todos os itens alinhados no topo */
+    align-items: flex-start;
+    /* Alinha o texto e botão à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+  }
+
+  .donation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Garante que o texto respeite a largura do container */
+  }
+
+  .donation__image {
+    flex: 0 0 40%;
+    /* Define largura proporcional ao container */
+    height: auto;
+    width: 40%;
+  }
+
+  .donation__title {
+    text-align: left;
+    font-size: 2em;
+    color: #F3B95A;
+  }
+
+  .donation__description {
+    margin: 10px 0;
+    /* Espaçamento entre título e botão */
+    font-size: 1em;
+    color: #fff;
+    align-self: flex-start;
+    /* Alinha com o início do conteúdo */
+    padding: 0;
+    /* Remove o padding desnecessário */
+  }
+
+  .donation__button {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #F3B95A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+}
+
+.carroso {
+  margin-top: 5rem;
+  width: 60vw;
+}
+
+.carroso_slide {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .carroso {
+    margin-top: 3rem;
+    width: 70vw;
+  }
+  
+  .carroso_slide {
+    width: 100%;
+  }
+}
