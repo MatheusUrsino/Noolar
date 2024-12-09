@@ -7,6 +7,8 @@ import {
 } from "@clerk/clerk-react";
 import { Link } from "react-router-dom";
 import "./css/navBarStyle.css";
+import { dark, neobrutalism } from "@clerk/themes";
+
 import ItensSideBar from "./components/itensSideBar";
 import ItensNavBar from "./components/itensNavBar";
 
@@ -29,39 +31,44 @@ function NavbarApp() {
         <span></span>
         <span></span>
       </div>
-      <div className="logo">
-        <Link to="/" className="linkNavigate">
-          <div className="logoContent">
-            <img
-              src="/images/logo.png"
-              alt="Logo Noolar"
-              width={64}
-              height={64}
-              className="logoImage"
+      <div className="contentNavbar">
+        <div className="logo">
+          <Link to="/" className="linkNavigate">
+            <div className="logoContent">
+              <img
+                src="/images/logo.png"
+                alt="Logo Noolar"
+                className="logoImage"
+              />
+
+              <h2>Noolar</h2>
+            </div>
+          </Link>
+        </div>
+        <div className="opcoes">
+          <ItensNavBar link="/AreaDaLeitura" item="Area da Leitura" />
+          <ItensNavBar link="/Cursos" item="Cursos" />
+          <ItensNavBar link="/Comunidades" item="Comunidade" />
+          <a
+            href="https://lingo-lar.vercel.app/"
+            className="linkNavigate navBarItens"
+          >
+            LingoLar
+          </a>
+          <ItensNavBar link="/SobreNos" item="Sobre nós" />
+          <ItensNavBar link="/Documentos" item="Documentos" />
+          <ItensNavBar link="/Doacao" item="Doação" />
+        </div>
+        <div className="userArea">
+          <SignedOut className="signInClerk">
+            <SignInButton className="signInClerk">Entrar</SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton
+              className="userClerk"
+              appearance={{ baseTheme: dark, neobrutalism }}
             />
-            <h2>Noolar</h2>
-          </div>
-        </Link>
-        <div className="contentNavbar">
-          <div className="opcoes">
-            <ItensNavBar link="/AreaDaLeitura" item="Area da Leitura" />
-            <ItensNavBar link="/Cursos" item="Cursos" />
-            <ItensNavBar link="/Comunidades" item="Comunidade" />
-            <a href="https://lingo-lar.vercel.app/" className="linkNavigate navBarItens">LingoLar</a>
-            <ItensNavBar link="/SobreNos" item="Sobre nós" />
-            <ItensNavBar link="/Documentos" item="Documentos" />
-            <ItensNavBar link="/Doacao" item="Doação" />
-          </div>
-          <div className="userArea">
-            <SignedOut className="signInClerk">
-              <SignInButton className="signInClerk">
-                Entrar
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </div>
+          </SignedIn>
         </div>
       </div>
       {menuOpen && (
@@ -84,16 +91,19 @@ function NavbarApp() {
             <ItensSideBar link="/AreaDaLeitura" item="Area da Leitura" />
             <ItensSideBar link="/Cursos" item="Cursos" />
             <ItensSideBar link="/Comunidades" item="Comunidade" />
-            <a href="https://lingo-lar.vercel.app/" className="linkNavigate sideBarItens">LingoLar</a>
+            <a
+              href="https://lingo-lar.vercel.app/"
+              className="linkNavigate sideBarItens"
+            >
+              LingoLar
+            </a>
             <ItensSideBar link="/SobreNos" item="Sobre nós" />
             <ItensSideBar link="/Documentos" item="Documentos" />
             <ItensSideBar link="/Doacao" item="Doação" />
           </div>
           <div className="sideBaruserArea">
-          <SignedOut className="signInClerk">
-              <SignInButton className="signInClerk">
-                Entrar
-              </SignInButton>
+            <SignedOut className="signInClerk">
+              <SignInButton className="signInClerk">Entrar</SignInButton>
             </SignedOut>
             <SignedIn>
               <UserButton />
