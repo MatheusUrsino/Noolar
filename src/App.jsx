@@ -8,7 +8,7 @@ import NavbarApp from "./header/NavBarApp.jsx";
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppMenu from "./MainMenu/components/menu.jsx";
-import {AppServicos} from "./Servicos/AppServicos.jsx"
+import AppServicos from "./Servicos/appServicos.jsx"
 function App() {
 
   return (
