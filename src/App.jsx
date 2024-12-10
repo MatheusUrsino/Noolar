@@ -8,7 +8,7 @@ import NavbarApp from "./header/NavBarApp.jsx";
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppMenu from "./MainMenu/components/menu.jsx";
-import AppServico from "./Servicos/AppServico.jsx";
+import AppServico from "./ServicesPage/AppServico.jsx";
 function App() {
   return (
     <Router>
