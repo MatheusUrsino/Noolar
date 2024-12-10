@@ -8,7 +8,7 @@ import NavbarApp from "./header/NavBarApp.jsx";
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppMenu from "./MainMenu/components/menu.jsx";
-import Servicos from "./Servicos/servicos.jsx";
+import AppServico from "./Servicos/AppServico.jsx";
 function App() {
   return (
     <Router>
@@ -24,7 +24,7 @@ function App() {
             path="/Documentos/DocumentosNecessarios"
             element={<AppDocsNecessarios />}
           />
-          <Route path="/Documentos/Servicos" element={<Servicos />} />
+          <Route path="/Documentos/Servicos" element={<AppServico />} />
 
           <Route path="/Comunidades" element={<AppDaComunidades />} />
           <Route path="/SobreNos" element={<SobreNos />} />
