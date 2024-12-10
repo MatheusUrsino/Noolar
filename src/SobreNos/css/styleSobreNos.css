@@ -8,6 +8,10 @@
 #tituloSobreNos {
   width: 100vw;
   margin-top: 20vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
   position: relative;
 }
 
