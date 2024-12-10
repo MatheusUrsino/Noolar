@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .textoPesquisa{
@@ -35,7 +34,8 @@ input:focus{
     .pesquisa{
         height: 79vh;   
         color: #002C3B;
-    
+        margin-bottom: 10%;   
+
     }
     .textoPesquisa{
         margin-top: 1em;
@@ -44,7 +44,9 @@ input:focus{
 
 @media screen and (max-width: 960px){
     .pesquisa{
-        height: 65vh;       
+        height: 65vh;  
+        margin-bottom: 10%;   
+     
     }
     .textoPesquisa{
         margin-top: 1em;
@@ -90,7 +92,6 @@ input:focus{
 @media screen and (max-width: 530px){
     .pesquisa{
         height: 38vh; 
-        margin-bottom: -36vw;        
     }
 
     .textoPesquisa{
