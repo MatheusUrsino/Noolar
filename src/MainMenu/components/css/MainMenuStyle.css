@@ -3,8 +3,108 @@
 body {
   margin: 0;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+.carroso_slide {
+  border-radius: 3vw;
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 47vw; /* Mantém o tamanho relativo */
+  height: 53vh; /* Mantém o tamanho relativo */
+  background-size: 100% 100%;
+  overflow: hidden;
+}
 
 
+
+.swiperRadius {
+  border-radius: 1vw;
+}
+.textCarroso {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2vw;
+  width: 60%;
+  justify-content: center;
+  align-items: start;
+  margin-left: 10%;
+}
+.textCarroso h2 {
+  font-size: 1.8vw;
+  font-weight: bolder;
+  width: 80%;
+}
+.textCarroso h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 80%;
+  letter-spacing: 0.15cap;
+}
+
+
+
+.bgSlide {
+  z-index: -100;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* Se as setas estiverem usando ícones, você pode usar o transform para ajustar */
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 30px; /* Ajuste o tamanho dos ícones */
+  font-weight: bold;
+  color: #002c3b;
+}
+
+
+
+@media (max-width: 800px) {
+  .carroso_slide {
+    height: 21vh; /* Ajuste da altura para telas pequenas */
+    border-radius: 5vw; /* Ajuste do raio de borda para telas menores */
+  }
+  .textCarroso {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2vw;
+    width: 60%;
+    justify-content: center;
+    align-items: start;
+    margin-left: 15%;
+  }
+  .textCarroso h2 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+    width: 80%;
+  }
+  .textCarroso h4 {
+    font-size: 2vw;
+    font-weight: 600;
+    width: 70%;
+    letter-spacing: 0.15cap;
+  }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 15px; /* Ajuste o tamanho dos ícones */
+    font-weight: bold;
+    color: #fff;
+  }
+
+.sectionCarroso
+{
+  scale: 1.3;
+  height: 100;
+}
+}
 .app-container {
   width: 100%;
   margin: 0 auto;
@@ -12,7 +112,7 @@ body {
 
 .hero_container {
   padding-top: 6rem;
-  background-image: url('/images/bgOficial.png');
+  background-image: url("/images/bgOficial.png");
   background-size: 100% 100%;
   min-height: 125vh;
   display: flex;
@@ -32,7 +132,7 @@ body {
 
 .hero_text {
   text-align: left;
-  translate: 0 -4rem
+  translate: 0 -4rem;
 }
 
 .hero__title {
@@ -49,10 +149,9 @@ body {
 }
 
 .highlight {
-  color: #F6794A;
+  color: #f6794a;
   font-weight: bold;
 }
-
 
 .hero__globe {
   max-width: 500px;
@@ -96,11 +195,10 @@ body {
   }
 
   .highlight {
-    color: #F6794A;
+    color: #f6794a;
     font-weight: bold;
   }
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -128,7 +226,6 @@ body {
   .hero_text {
     text-align: left;
     translate: 0 0;
-
   }
 
   .hero__title {
@@ -168,7 +265,7 @@ body {
   align-items: center;
   width: 100%;
   font-size: 2rem;
-  color: #002C3B;
+  color: #002c3b;
   font-weight: 600;
   flex-direction: column;
   /* Para alinhar itens verticalmente */
@@ -183,7 +280,6 @@ body {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 480px) {
-
   .intro {
     display: flex;
     flex-direction: column; /* Alinha os elementos verticalmente */
@@ -198,8 +294,6 @@ body {
     line-height: 1.5; /* Ajusta o espaçamento entre linhas */
     padding: 0.4rem;
   }
-
-
 }
 
 /* Mission Section */
@@ -232,7 +326,7 @@ body {
 .mission__description {
   font-size: 1.7em;
   font-weight: 500;
-  color: #002C3B;
+  color: #002c3b;
 }
 
 /* Features Section */
@@ -256,10 +350,7 @@ body {
   padding: 1rem;
   align-items: center;
   height: 350px;
-
 }
-
-
 
 .card-title {
   color: #198168;
@@ -274,7 +365,7 @@ body {
   position: relative;
   border: none;
   border-radius: 9px;
-  background-color: #F6794A;
+  background-color: #f6794a;
   height: 40px;
   padding: 10px;
   width: 60%;
@@ -300,7 +391,7 @@ body {
   width: 70%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .mission__title {
     font-size: 5vh;
   }
@@ -311,10 +402,9 @@ body {
 
   .card-container {
     min-width: 40%;
-    padding: .5rem;
+    padding: 0.5rem;
     align-items: center;
     height: 300px;
-
   }
 
   .card-title {
@@ -322,11 +412,11 @@ body {
   }
 
   .card-text {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .card-button {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .features__grid {
@@ -348,7 +438,7 @@ body {
   }
 
   .card-container {
-    padding: .5rem;
+    padding: 0.5rem;
     align-items: center;
     height: 300px;
   }
@@ -356,7 +446,6 @@ body {
   .card-container {
     min-width: 70%;
   }
-
 }
 
 /* AI Tool Section */
@@ -364,8 +453,7 @@ body {
   display: flex;
   align-items: center;
   padding: 40px 20px;
-  background-color: #E6CFC9;
-
+  background-color: #e6cfc9;
 }
 
 .crosel {
@@ -376,7 +464,7 @@ body {
 
 .carrosel_card {
   border-radius: 20px;
-  background-image: url("../../../../../public/images/imgfundo.png");
+  background-image: url("/images/imgfundo.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -384,8 +472,6 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-
-
 }
 
 .carrosel_card_inner {
@@ -406,7 +492,7 @@ body {
 .carrosel_botao {
   width: 100%;
   background-color: #e74c3c;
-  padding: .6rem;
+  padding: 0.6rem;
   border-radius: 20px;
   color: white;
   text-decoration: none;
@@ -447,7 +533,7 @@ body {
   .carrosel_botao {
     width: 90%; /* Botão mais largo */
     font-size: 1rem; /* Texto maior no botão */
-    background-color: #F3B95A;
+    background-color: #f3b95a;
     padding: 0.8rem; /* Espaçamento maior para toques */
     border-radius: 15px;
     color: white;
@@ -473,15 +559,14 @@ body {
     padding: 3rem;
   }
 
-
   .carrosel_card {
     border-radius: 20px;
-    background-image: url("../../../../../public/images/imgfundo.png");
+    background-image: url("/images/imgfundo.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    padding: .5rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
   }
@@ -513,9 +598,9 @@ body {
 
   .carrosel_botao {
     width: 80%;
-    font-size: .8rem;
-    background-color: #F3B95A;
-    padding: .3rem;
+    font-size: 0.8rem;
+    background-color: #f3b95a;
+    padding: 0.3rem;
     border-radius: 20px;
     color: white;
     text-decoration: none;
@@ -560,7 +645,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../../../public/images/backing.png");
+  background-image: url("/images/backing.png");
   background-size: contain 100%;
   background-repeat: no-repeat;
 }
@@ -585,7 +670,7 @@ body {
 .donation__title {
   text-align: left;
   font-size: 3em;
-  color: #F3B95A;
+  color: #f3b95a;
   margin-bottom: 10px;
 }
 
@@ -601,7 +686,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #F3B95A;
+  background-color: #f3b95a;
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -646,7 +731,7 @@ body {
   .donation__title {
     text-align: left;
     font-size: 2em;
-    color: #F3B95A;
+    color: #f3b95a;
   }
 
   .donation__description {
@@ -665,7 +750,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 5px 10px;
-    background-color: #F3B95A;
+    background-color: #f3b95a;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
@@ -678,16 +763,12 @@ body {
   width: 60vw;
 }
 
-.carroso_slide {
-  width: 90%;
-}
-
 @media (max-width: 768px) {
   .carroso {
     margin-top: 3rem;
     width: 70vw;
   }
-  
+
   .carroso_slide {
     width: 100%;
   }

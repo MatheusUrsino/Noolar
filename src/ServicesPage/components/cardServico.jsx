@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./css/styleCardServico.css";
 
 
-function CardServico( bgColor, textoFrente, textoVerso ) {
+function CardServico( {bgColor, textoFrente, textoVerso} ) {
   const [flipped, setFlipped] = useState(false);
 
   const handleMouseEnter = () => {

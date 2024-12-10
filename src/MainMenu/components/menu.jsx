@@ -39,7 +39,7 @@ function AppMenu() {
             </p>
           </div>
         </section> 
-        <section>
+        <section className='sectionCarroso'>
           <CarroselSegundo></CarroselSegundo>
         </section>
 
