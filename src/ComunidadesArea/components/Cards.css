@@ -1,13 +1,11 @@
 .card{
+    background-image: url(/img/BackgroundFundo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;    
     height: auto;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: -3vw;
-    top: 3vw;
-    width: 100vw;
+
     align-items: center;
 }
 

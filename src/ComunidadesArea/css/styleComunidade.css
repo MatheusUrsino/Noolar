@@ -3,18 +3,19 @@
   overflow-x: hidden;
 }
 
-body.bgComunidade
-  {
-  background-image: url("/bgComunidades.svg"); /* Novo background combinado */
-  background-repeat: no-repeat;
-  background-size: 100% 100%; /* Ajusta a imagem para cobrir toda a área */
-  width: 100%; /* Garante que ocupe toda a largura da tela */
-  height: 100%; /* Ocupa toda a altura da viewport */
-  position: relative;
-  top: 0;
-  left: 0;
+.textInWhite
+{
+  color: #002C3B;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  font-size: 200%;
 }
 
 .paginaCOmunidadeObjetos {
@@ -23,7 +24,7 @@ body.bgComunidade
 
 @media screen and (max-width: 1020px) {
   .bgComunidade {
-    background-size: cover; /* Ajusta proporcionalmente */
+    background-size: contain 100%; /* Ajusta proporcionalmente */
   }
 
   .paginaCOmunidadeObjetos {
@@ -33,7 +34,7 @@ body.bgComunidade
 
 @media screen and (max-width: 768px) {
   .bgComunidade {
-    background-size: 100% 100%; /* Reduzindo para telas menores */
+    background-size: contain 100%; /* Reduzindo para telas menores */
   }
 
   .paginaCOmunidadeObjetos {

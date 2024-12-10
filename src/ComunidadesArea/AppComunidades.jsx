@@ -13,13 +13,19 @@ function AppDaComunidades() {
   }, []);
   return (
     <>
-        <div className="contentComunidade">
-          <Inicio />
-          <div className="paginaCOmunidadeObjetos">
-            <Pesquisa />
-            <Cards />
-          </div>
+      <div className="contentComunidade">
+        <Inicio />
+        <div className="textInWhite">
+          <h2>
+            Uma boa <span className="highlightOrange"> experiência </span> é o
+            que desejamos a<span className="highlightAqua"> vocês </span>.
+          </h2>
         </div>
+        <div className="paginaCOmunidadeObjetos">
+          <Pesquisa />
+          <Cards />
+        </div>
+      </div>
     </>
   );
 }
