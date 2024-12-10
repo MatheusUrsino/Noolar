@@ -10,7 +10,7 @@ function CardCarrosel(props) {
       <div className="textCarrosel">
         <h2>{props.titulo}</h2>
         <h4>{props.texto}</h4>
-        <button className="carroselButton">Acesse Aqui</button>
+        <button className="carroselButton"><p>Acesse Aqui</p></button>
 
       </div>
         <div className={props.classeImagem}>

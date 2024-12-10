@@ -762,9 +762,11 @@ body {
   font-size: 1.7em;
   color: #fff;
 }
+.carroselButton p{
+  font-size: 200%;
+}
 .carroselButton {
   max-width: 40rem;
-  font-size: 3rem;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
