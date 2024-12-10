@@ -2,7 +2,7 @@ import React from "react";
 import "./AppServicos.css";
 import CardServico from "./components/cardServico";
 
-function AppServico(){
+function AppServico() {
   const handleMouseOver = (e) => {
     e.currentTarget.style.transform = "rotateY(180deg)";
   };
@@ -37,10 +37,10 @@ function AppServico(){
         <div className="textMidServico">
           <h2>
             Descubra a gama de
-            <span className=" highlightAqua"> Serviços Públicos</span> oferecidos no Brasil e como eles podem{" "}
+            <span className=" highlightAqua"> Serviços Públicos</span>{" "}
+            oferecidos no Brasil e como eles podem{" "}
             <span className="highlightOrange">facilitar o seu dia a dia!!</span>
           </h2>
-         
         </div>
 
         <img className="fundoDoBody" src="/images/fundo2.png" alt="" />
@@ -52,27 +52,27 @@ function AppServico(){
           />
           <CardServico
             bgColor="#198168"
-            textoFrente="Renda Brasil"
-            textoVerso="Voltado para garantir renda mínima às famílias em situação de vulnerabilidade, promovendo inclusão social."
+            textoFrente="Assistência Social"
+            textoVerso="Atendimento e proteção a brasileiros em vulnerabilidade social, assegurando direitos e acesso a serviços essenciais."
           />
           <CardServico
             bgColor="#F6794A"
-            textoFrente="Renda Brasil"
-            textoVerso="Voltado para garantir renda mínima às famílias em situação de vulnerabilidade, promovendo inclusão social."
+            textoFrente="Educação"
+            textoVerso="Sistema público de ensino gratuito no Brasil, abrangendo desde a educação básica até o ensino superior."
           />
           <CardServico
             bgColor="#198168"
-            textoFrente="Renda Brasil"
-            textoVerso="Voltado para garantir renda mínima às famílias em situação de vulnerabilidade, promovendo inclusão social."
+            textoFrente="AuxílioMoradia"
+            textoVerso="Programa brasileiro que oferece apoio habitacional para famílias de baixa renda, garantindo moradia digna."
           />
           <CardServico
             bgColor="#006182"
-            textoFrente="Renda Brasil"
-            textoVerso="Voltado para garantir renda mínima às famílias em situação de vulnerabilidade, promovendo inclusão social."
+            textoFrente="Saúde"
+            textoVerso="O Sistema Único de Saúde (SUS) oferece atendimento gratuito a todos os brasileiros, com foco na prevenção e tratamento."
           />
         </div>
       </div>
     </>
   );
-};
-export default AppServico
+}
+export default AppServico;
