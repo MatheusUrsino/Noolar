@@ -33,8 +33,7 @@ export default function CarroselSegundo() {
             titulo="LingoLar:"
             texto="Faça um teste rápido e descubra o Lingolar, sua ferramenta
          personalizada para aprender idiomas de forma simples!"
-            classeImagem="imageCarroso"
-
+     
             bgImage="/bgSlideLingolar.svg"
           />
         </SwiperSlide>
@@ -42,8 +41,7 @@ export default function CarroselSegundo() {
           <CardCarroso
             titulo="Noolar: Inovação no Ensino"
             texto="A Noolar se destaca por seu método de ensino moderno, utilizando tecnologia para proporcionar aprendizado acessível e de qualidade."
-            classeImagem="imageCarroso"
-
+            
             bgImage="/bgCarrosoSlide2.svg"
           />
         </SwiperSlide>
@@ -51,8 +49,10 @@ export default function CarroselSegundo() {
           <CardCarroso
             titulo="Noolar: Direcionamento de Documentação"
             texto="A Noolar orienta onde os usuários devem retirar documentos necessários, facilitando o acesso a informações e recursos específicos."
+   
             bgImage="/bgCarrosoSlide3.svg"
           />
+          
         </SwiperSlide>
       </Swiper>
     </div>

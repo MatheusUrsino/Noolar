@@ -7,7 +7,7 @@ html, body {
   max-width: 100%;
   max-height: 100%;
   min-height: 100vh; /* Garante que a altura do corpo ocupe a tela */
-
+overflow-x: hidden;
 }
 
 #root {

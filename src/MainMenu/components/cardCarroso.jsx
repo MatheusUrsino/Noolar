@@ -11,7 +11,10 @@ function CardCarroso(props) {
         <h2>{props.titulo}</h2>
         <h4>{props.texto}</h4>
       </div>
-
+      <div className={props.classeImagem
+      }>
+        <img src={props.image} alt="" width={128} />
+      </div>
     </div>
   );
 }
