@@ -1,0 +1,645 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E4CDC7; 
+  color: #ffffff;
+  overflow-x: hidden;
+ 
+}
+
+/*BANNER*/
+
+/* Imagem de fundo */
+.imagembanner {
+  position: absolute;
+  width: 102%;
+  height: 151%;
+  overflow: hidden;
+  z-index: -1;
+  left: -1vw;
+  top: -6vw;
+  object-fit: cover;
+  display: flex;
+
+}
+
+/* Container principal */
+.text-container {
+  position: absolute;
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  z-index: 10; 
+  display: flex;
+}
+
+/* Estilo do texto */
+.text-section {
+  margin-bottom: 3vw; 
+  font-size: 3.5vw;
+  font-weight: 600;
+  color: white; 
+  display: flex;
+  position: absolute;
+  width: 60vw;
+  left: -25vw;
+  top: -7vw;
+  display: flex;
+}
+
+.highlight {
+  color: #F3B95A;
+  font-weight: 700;
+}
+
+
+.icon-section {
+  position: absolute; 
+  top: 20vw; 
+  left: 5vw; 
+  transform: translate(-50%, -50%); 
+  z-index: 10; 
+  text-align: center; 
+  display: flex;
+}
+
+.icon-section img {
+  width: 35vw;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+/*CARDS*/
+#card1{
+  background-color: #F6794A;
+  border-radius: 1vw;
+  padding: 2vw; 
+  width: 25vw; 
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#card2{
+  background-color: #006182;
+  border-radius: 1vw;
+  padding: 2vw; /* Aumenta o espaçamento interno */
+  width: 25vw; /* Define uma largura proporcional à tela */
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#card3{
+  background-color: #198168;
+  border-radius: 1vw;
+  padding: 2vw; /* Aumenta o espaçamento interno */
+  width: 25vw; /* Define uma largura proporcional à tela */
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*PORTUGUES*/
+
+.section-container {
+  margin-top: 80vw; 
+  padding: 3vw;
+  
+  border-radius: 8px;
+}
+
+.text-box {
+  position: absolute;
+  top: 145%; 
+  left: -5%;
+  background-color: #D9D9D9;
+  padding: 1vw 8vw; 
+  border-radius: 2.9vw;
+  box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+  font-size: 2.4vw; 
+  max-width: 180%; 
+  width: fit-content; 
+  z-index: 2;
+  
+}
+
+.text-box p{
+  color: #002C3B;
+  font-weight: 600;
+}
+
+.text-box .highlight {
+  color: #F6794A;
+  font-weight: bold;
+}
+
+.text-box .highlight2 {
+  color: #006182;
+  font-weight: bold;
+}
+
+.text-box .highlight3 {
+  color: #198168;
+  font-weight: bold;
+}
+
+.card-container {
+  top: 185%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw;
+}
+
+
+
+/* Estilos globais para todos os cards */
+.card-container h3 {
+  font-size: 1.7rem; /* Tamanho da fonte */
+  margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+.card-container h4 {
+  font-size: 1.3rem; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#card1 button {
+
+  font-size: 1.2vw; 
+  font-weight: 600 ;/* Tamanho da fonte */
+  padding: 0.8vw 2vw; /* Espaçamento interno */
+  background-color: #591605; /* Cor de fundo principal */
+  color: #FFFFFF; /* Cor do texto */
+  border: none; /* Remove borda padrão */
+  border-radius: 1vw; /* Bordas arredondadas */
+  cursor: pointer; /* Ícone de clique */
+  transition: all 0.3s ease-in-out; /* Suaviza transições */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+#card1 button:hover {
+  background-color: #7a2814; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+#card1 button:active {
+  transform: scale(0.95); /* Dá um efeito de clique */
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+}
+
+#card2 button {
+  font-size: 1.2vw; /* Tamanho da fonte */
+  font-weight: 600;
+  padding: 0.8vw 2vw; /* Espaçamento interno */
+  background-color: #068AEA; /* Cor de fundo principal */
+  color: #FFFFFF; /* Cor do texto */
+  border: none; /* Remove borda padrão */
+  border-radius: 1vw; /* Bordas arredondadas */
+  cursor: pointer; /* Ícone de clique */
+  transition: all 0.3s ease-in-out; /* Suaviza transições */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+#card2 button:hover {
+  background-color: #0a0870; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+#card2 button:active {
+  transform: scale(0.95); /* Dá um efeito de clique */
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+}
+
+#card3 button {
+
+  font-size: 1.2vw; 
+  font-weight: 600 ;/* Tamanho da fonte */
+  padding: 0.8vw 2vw; /* Espaçamento interno */
+  background-color: #4aca00; /* Cor de fundo principal */
+  color: #FFFFFF; /* Cor do texto */
+  border: none; /* Remove borda padrão */
+  border-radius: 1vw; /* Bordas arredondadas */
+  cursor: pointer; /* Ícone de clique */
+  transition: all 0.3s ease-in-out; /* Suaviza transições */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+#card3 button:hover {
+  background-color: #2dd000; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+#card3 button:active {
+  transform: scale(0.95); /* Dá um efeito de clique */
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+}
+
+/* Estilo para imagens dentro dos cards */
+.card-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 29px;
+}
+
+.text-box2 {
+  position: absolute;
+  top: 265%; /* Ajuste conforme necessário */
+  left: -5%;
+  background-color: #D9D9D9;
+  padding: 1vw 8vw; /* Aumenta o espaço interno para deixar a caixa maior */
+  border-radius: 2.9vw;
+  box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+  font-size: 2.4vw; /* Aumenta o tamanho do texto */
+  max-width: 180%; /* Largura máxima da caixa */
+  width: fit-content; /* Ajusta a largura conforme o conteúdo */
+  z-index: 2;
+}
+
+.text-box2 p{
+  color: #002C3B;
+  font-weight: 600;
+}
+
+.text-box2 .highlight2 {
+  color: #198168;
+  font-weight: bold;
+}
+
+.text-box3 {
+  position: absolute;
+  top: 385%; /* Ajuste conforme necessário */
+  left: -5%;
+  background-color: #D9D9D9;
+  padding: 1vw 8vw; /* Aumenta o espaço interno para deixar a caixa maior */
+  border-radius: 2.9vw;
+  box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+  font-size: 2.4vw; /* Aumenta o tamanho do texto */
+  max-width: 180%; /* Largura máxima da caixa */
+  width: fit-content; /* Ajusta a largura conforme o conteúdo */
+  z-index: 2;
+}
+.text-box3 p{
+  color: #002C3B;
+  font-weight: 600;
+}
+
+.text-box3 .highlight2 {
+  color: #F6794A;
+  font-weight: bold;
+}
+
+.text-box3 .highlight1 {
+  color: #198168;
+  font-weight: bold;
+}
+
+.text-box3 .highlight3 {
+  color: #006182;
+  font-weight: bold;
+}
+/*PROFISSIONALIZANTE*/
+
+.section-containerc{
+  margin-top: 13vw; /* Ajuste conforme necessário */
+  padding: 3vw;
+  
+  border-radius: 8px;
+}
+
+
+.section-containercc{
+  margin-top: 15vw; /* Ajuste conforme necessário */
+  padding: 3vw;
+  
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Fim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  width: 99.1vw;
+  height: 100vw;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.ImagemFim img {
+  display: flex;
+  position: absolute;
+  width: 105vw;
+  height: 110%;
+  max-height: fit-content;
+  z-index: -1;
+  top: 11vw;
+  object-fit:cover;
+  right: -0.5vw;
+  overflow: hidden;
+
+  
+}
+
+.text-containerf {
+  margin-top: 38vw;
+  z-index: 1;
+  color: #fff;
+}
+
+.text-sectionf h1 {
+  font-size: 4vw;
+  margin-bottom: 2vw;
+  color: #fff;
+}
+
+.text-sectionf p {
+  font-size: 2.5vw;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.icon-sectionf img{
+
+  width: 35vw;
+  height: auto;
+
+}
+
+.buttonf {
+  font-size: 3.2vw; 
+  font-weight: 600 ;/* Tamanho da fonte */
+  padding: 0.9vw 2vw; /* Espaçamento interno */
+  background-color: #e0461b; /* Cor de fundo principal */
+  color: #FFFFFF; /* Cor do texto */
+  border: none; /* Remove borda padrão */
+  border-radius: 2vw; /* Bordas arredondadas */
+  cursor: pointer; /* Ícone de clique */
+  transition: all 0.3s ease-in-out; /* Suaviza transições */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+ .buttonf:hover {
+  background-color: #a33100; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+.buttonf:active {
+  transform: scale(0.95); /* Dá um efeito de clique */
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE MOBILE FIRST */
+
+/* Dispositivos móveis (abaixo de 768px) */
+
+@media (max-width: 768px) and (min-width: 300px) {
+  .imagembanner {
+    height: auto; /* Ajusta altura proporcionalmente */
+    object-fit: cover;
+    position: absolute;
+    width: 106%; /* Garante o ajuste total */
+    z-index: -1;
+    top: 10;
+    left: 10;
+  }
+
+  .text-section {
+    font-size: 3.5vw; /* Texto maior para legibilidade */
+    margin-bottom: 2vw; /* Espaçamento inferior entre elementos */
+    margin-left: 15vw; /* Move o texto para a direita */
+    margin-top: 10vw; /* Move o texto mais para baixo */
+    text-align: center; /* Centraliza o texto horizontalmente */
+  }
+
+  .icon-section {
+    display: flex;
+    position: relative; /* Controle mais preciso */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-40%); /* Corrige o deslocamento horizontal */
+    margin-bottom: 120vw; /* Mantém o ícone na posição */
+  }
+
+  .icon-section img {
+    display: flex;
+    width: 35vw; /* Ajusta o tamanho do ícone */
+    max-width: 150px; /* Limite para o ícone */
+  }
+
+  .text-container {
+    position: absolute;
+    top: 55%; /* Ajusta para centralizar o conteúdo */
+  }
+
+  .text-box {
+    position: absolute;
+    top: 45%; 
+    left: -5%;
+    display: flex;
+    
+  }
+
+  .card-container h3 {
+    font-size: 0.9rem; /* Reduz o tamanho do h3 */
+    margin-bottom: 1vw; /* Ajusta o espaçamento inferior */
+    margin-top: -1vw;
+  }
+
+  .card-container h4 {
+    font-size: 0.8rem; /* Reduz o tamanho do h4 */
+    margin-bottom: 0.8vw; /* Ajusta o espaçamento inferior */
+  }
+
+  /* Botões maiores nos cards */
+  #card1 button,
+  #card2 button,
+  #card3 button {
+    font-size: 2.5vw; /* Aumenta o tamanho da fonte dos botões */
+    padding: 1.5vw 3vw; /* Aumenta o espaçamento interno */
+    border-radius: 2vw; /* Torna os botões mais arredondados */
+  }
+
+  #card1 button:hover,
+  #card2 button:hover,
+  #card3 button:hover {
+    transform: scale(1.1); /* Aumenta um pouco mais o botão ao passar o mouse */
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.3); /* Realça a sombra ao passar o mouse */
+  }
+
+  #card1 button:active,
+  #card2 button:active,
+  #card3 button:active {
+    transform: scale(1); /* Reduz o efeito de clique */
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Sombra reduzida no clique */
+  }
+
+  .text-box2{
+    position: absolute;
+    display: flex;
+    top: 95%;
+  }
+
+  .text-box3{
+    position: absolute;
+    display: flex;
+    top: 143%;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets e telas médias (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1025px) {
+  .imagembanner {
+    width: 102%; /* Ainda ocupa toda a largura */
+    height: auto; /* Garante que a altura ajuste proporcionalmente */
+    object-fit: cover;
+    left: 5;
+    display: flex;
+  }
+  .text-container {
+    display: flex;
+    margin-top: -10%;
+    font-size: 4vw; /* Texto levemente maior */
+    margin-bottom: 1vw; /* Mais espaçamento entre texto e ícone */
+  }
+  .icon-section{
+    display: flex;
+    right: -40vw;
+    margin-top: 3vw;
+  }
+
+  .icon-section img {
+    width: 35vw; /* Ícone maior para tablets */
+  
+  }
+
+  .text-box {
+    position: absolute;
+    top: 70%; 
+    left: -5%;
+    display: flex;
+    
+  }
+
+  .text-box2{
+    position: absolute;
+    display: flex;
+    top: 145%;
+  }
+
+  .text-box3{
+    position: absolute;
+    display: flex;
+    top: 213%;
+  }
+
+  .card-container h3 {
+    font-size: 1.3rem; /* Reduz o tamanho do h3 */
+    margin-bottom: 1vw; /* Ajusta o espaçamento inferior */
+    margin-top: -1vw;
+  }
+
+  .card-container h4 {
+    font-size: 1rem; /* Reduz o tamanho do h4 */
+    margin-bottom: 0.8vw; /* Ajusta o espaçamento inferior */
+  }
+
+  /* Botões maiores nos cards */
+  #card1 button,
+  #card2 button,
+  #card3 button {
+    font-size: 2vw; /* Aumenta o tamanho da fonte dos botões */
+    padding: 1.5vw 2.5vw; /* Aumenta o espaçamento interno */
+    border-radius: 2vw; /* Torna os botões mais arredondados */
+  }
+
+  #card1 button:hover,
+  #card2 button:hover,
+  #card3 button:hover {
+    transform: scale(1.1); /* Aumenta um pouco mais o botão ao passar o mouse */
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.3); /* Realça a sombra ao passar o mouse */
+  }
+
+  #card1 button:active,
+  #card2 button:active,
+  #card3 button:active {
+    transform: scale(1); /* Reduz o efeito de clique */
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Sombra reduzida no clique */
+  }
+}
+
+
+
+

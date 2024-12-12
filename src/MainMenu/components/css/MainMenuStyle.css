@@ -3,17 +3,21 @@
 body {
   margin: 0;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white;
 }
+
 .carroso_slide {
   border-radius: 3vw;
   margin: auto;
   display: flex;
   position: relative;
-  width: 47vw; /* Mantém o tamanho relativo */
-  height: 53vh; /* Mantém o tamanho relativo */
+  width: 47vw;
+  /* Mantém o tamanho relativo */
+  height: 53vh;
+  /* Mantém o tamanho relativo */
   background-size: 100% 100%;
   overflow: hidden;
 }
@@ -21,6 +25,7 @@ body {
 .swiperRadius {
   border-radius: 1vw;
 }
+
 .textCarrosel {
   margin: auto;
   overflow: hidden;
@@ -34,41 +39,48 @@ body {
   text-align: center;
   width: 85%;
 }
+
 .textCarrosel h2 {
   font-size: 2vw;
   font-weight: bolder;
 }
+
 .textCarrosel h4 {
   font-size: 1.6vw;
   font-weight: 500;
   letter-spacing: 0.15cap;
 }
+
 .textCarrosel button {
   font-size: 1.6vw;
   font-weight: 500;
   letter-spacing: 0.15cap;
 }
+
 .textCarroso {
   overflow: hidden;
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1vw;
   width: 60%;
   justify-content: center;
   align-items: start;
   margin-left: 10%;
 }
+
 .textCarroso h2 {
   font-size: 1.8vw;
   font-weight: bolder;
   width: 80%;
 }
+
 .textCarroso h4 {
   font-size: 1.3vw;
   font-weight: 500;
   width: 80%;
   letter-spacing: 0.15cap;
+  letter-spacing: 1px;
 }
 
 .imageCarrosel {
@@ -81,8 +93,8 @@ body {
   align-items: center;
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
+
 .textCarrosel {
   margin: auto;
   overflow: hidden;
@@ -96,10 +108,12 @@ body {
   text-align: center;
   width: 70%;
 }
+
 .textCarrosel h2 {
   font-size: 1.5vw;
   font-weight: bolder;
 }
+
 .textCarrosel h4 {
   font-size: 1vw;
   font-weight: 500;
@@ -114,6 +128,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.15cap;
 }
+
 .bgSlide {
   z-index: -100;
   display: flex;
@@ -126,41 +141,49 @@ body {
 /* Se as setas estiverem usando ícones, você pode usar o transform para ajustar */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 30px; /* Ajuste o tamanho dos ícones */
+  font-size: 30px;
+  /* Ajuste o tamanho dos ícones */
   font-weight: bold;
   color: #002c3b;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .carroso_slide {
-    height: 30vh; /* Ajuste da altura para telas pequenas */
-    border-radius: 5vw; /* Ajuste do raio de borda para telas menores */
+    height: 30vh;
+    /* Ajuste da altura para telas pequenas */
+    border-radius: 5vw;
+    /* Ajuste do raio de borda para telas menores */
   }
+
   .textCarroso {
     overflow: hidden;
     display: flex;
     position: relative;
     flex-direction: column;
     gap: 2vw;
-    width: 60%;
+    width: 100%;
     justify-content: center;
     align-items: start;
     margin-left: 15%;
   }
+
   .textCarroso h2 {
     font-size: 2.5vw;
     font-weight: bolder;
-    width: 80%;
+    width: 100%;
   }
+
   .textCarroso h4 {
     font-size: 2vw;
     font-weight: 600;
-    width: 70%;
+    width: 100%;
     letter-spacing: 0.15cap;
   }
+
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 15px; /* Ajuste o tamanho dos ícones */
+    font-size: 15px;
+    /* Ajuste o tamanho dos ícones */
     font-weight: bold;
     color: #fff;
   }
@@ -170,6 +193,7 @@ body {
     height: 100;
   }
 }
+
 .app-container {
   width: 100%;
   margin: 0 auto;
@@ -228,26 +252,32 @@ body {
   .hero_container {
     padding-top: 1em;
     display: flex;
-    flex-direction: column; /* Coloca os elementos em coluna */
+    flex-direction: column;
+    /* Coloca os elementos em coluna */
     justify-content: center;
     align-items: center;
   }
-  .textCarrosel h2
-  {
+
+  .textCarrosel h2 {
     font-size: 0.8rem;
   }
-  .textCarrosel h4
-  {
+
+  .textCarrosel h4 {
     font-size: 0.4rem
   }
+
   .hero {
-    text-align: center; /* Centraliza o texto para melhor legibilidade */
-    translate: 0 0; /* Remove o deslocamento */
+    text-align: center;
+    /* Centraliza o texto para melhor legibilidade */
+    translate: 0 0;
+    /* Remove o deslocamento */
   }
 
   .hero_text {
-    text-align: center; /* Ajusta o alinhamento para centralizar */
-    translate: 0 0; /* Remove o deslocamento */
+    text-align: center;
+    /* Ajusta o alinhamento para centralizar */
+    translate: 0 0;
+    /* Remove o deslocamento */
   }
 
   .hero__title {
@@ -255,14 +285,18 @@ body {
   }
 
   .hero__subtitle {
-    font-size: 4vw; /* Escala o subtítulo para telas menores */
+    font-size: 4vw;
+    /* Escala o subtítulo para telas menores */
     margin-top: 5px;
-    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+    line-height: 1.2;
+    /* Ajusta o espaçamento entre linhas */
   }
 
   .hero__globe {
-    width: 60vw; /* Ajusta o tamanho da imagem */
-    max-width: 200px; /* Limita o tamanho máximo da imagem */
+    width: 60vw;
+    /* Ajusta o tamanho da imagem */
+    max-width: 200px;
+    /* Limita o tamanho máximo da imagem */
     height: auto;
   }
 
@@ -354,7 +388,8 @@ body {
 @media (max-width: 480px) {
   .intro {
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
+    flex-direction: column;
+    /* Alinha os elementos verticalmente */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -362,8 +397,10 @@ body {
   }
 
   .intro__text {
-    font-size: 1.2rem; /* Ajusta o tamanho do texto para telas pequenas */
-    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    font-size: 1.2rem;
+    /* Ajusta o tamanho do texto para telas pequenas */
+    line-height: 1.5;
+    /* Ajusta o espaçamento entre linhas */
     padding: 0.4rem;
   }
 }
@@ -389,6 +426,7 @@ body {
 }
 
 .mission__title {
+  text-align: center;
   font-size: 2em;
   font-weight: 700;
   color: #198168;
@@ -396,6 +434,7 @@ body {
 }
 
 .mission__description {
+  text-align: center;
   font-size: 1.7em;
   font-weight: 500;
   color: #002c3b;
@@ -403,6 +442,7 @@ body {
 
 /* Features Section */
 .features {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -513,10 +553,7 @@ body {
     padding: 0.5rem;
     align-items: center;
     height: 300px;
-  }
-
-  .card-container {
-    min-width: 70%;
+    min-width: 85%;
   }
 }
 
@@ -574,16 +611,19 @@ body {
 @media (max-width: 480px) {
   .ai-tool {
     display: flex;
-    flex-direction: column; /* Elementos empilhados verticalmente */
+    flex-direction: column;
+    /* Elementos empilhados verticalmente */
     align-items: center;
   }
 
   .carrosel_texto {
-    display: none; /* Mantém o texto oculto para design limpo */
+    display: none;
+    /* Mantém o texto oculto para design limpo */
   }
 
   .carrosel_titulo {
-    font-size: 2rem; /* Aumenta o tamanho do título para melhor visibilidade */
+    font-size: 2rem;
+    /* Aumenta o tamanho do título para melhor visibilidade */
     text-align: center;
     margin-bottom: -2rem;
   }
@@ -597,15 +637,20 @@ body {
   }
 
   .carrosel_img {
-    max-width: 20rem; /* Reduz o tamanho máximo para telas menores */
-    width: 90%; /* Usa a maior parte da largura disponível */
+    max-width: 20rem;
+    /* Reduz o tamanho máximo para telas menores */
+    width: 90%;
+    /* Usa a maior parte da largura disponível */
   }
 
   .carrosel_botao {
-    width: 90%; /* Botão mais largo */
-    font-size: 1rem; /* Texto maior no botão */
+    width: 90%;
+    /* Botão mais largo */
+    font-size: 1rem;
+    /* Texto maior no botão */
     background-color: #f3b95a;
-    padding: 0.8rem; /* Espaçamento maior para toques */
+    padding: 0.8rem;
+    /* Espaçamento maior para toques */
     border-radius: 15px;
     color: white;
     text-decoration: none;
@@ -615,11 +660,13 @@ body {
   }
 
   .carrosel_botao:hover {
-    background-color: #e5a347; /* Cor levemente diferente ao passar o mouse */
+    background-color: #e5a347;
+    /* Cor levemente diferente ao passar o mouse */
   }
 
   .carrosel_botao:focus {
-    outline: 2px solid #fff; /* Destaque para acessibilidade */
+    outline: 2px solid #fff;
+    /* Destaque para acessibilidade */
   }
 }
 
@@ -628,14 +675,14 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    background-: #fff;
   }
+
   .boxAI {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-  margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
     scale: 1.35;
   }
@@ -650,7 +697,8 @@ body {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    height: 40vh; /* Ajuste a altura aqui */
+    height: 40vh;
+    /* Ajuste a altura aqui */
   }
 
   .carrosel_texto {
@@ -727,7 +775,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/backing.png");
+  background-image: url("/backInicial.svg");
   background-size: contain 100%;
   background-repeat: no-repeat;
   margin-top: -10vh;
@@ -762,9 +810,11 @@ body {
   font-size: 1.7em;
   color: #fff;
 }
-.carroselButton p{
+
+.carroselButton p {
   font-size: 200%;
 }
+
 .carroselButton {
   max-width: 40rem;
   display: inline-block;
@@ -853,9 +903,10 @@ body {
     border-radius: 20px;
     font-weight: bold;
   }
+
   .carroselButton {
     max-width: 6rem;
-height: 6vw;
+    height: 6vw;
     font-size: 2rem;
     display: inline-block;
     margin-top: 20px;
@@ -874,6 +925,8 @@ height: 6vw;
   width: 60vw;
 }
 
+
+
 @media (max-width: 768px) {
   .carroso {
     margin-top: 3rem;
@@ -884,3 +937,4 @@ height: 6vw;
     width: 100%;
   }
 }
+

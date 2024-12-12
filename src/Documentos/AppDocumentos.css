@@ -54,9 +54,8 @@
   
   /* Imagens de fundo */
   .DocsbgContent img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
   }
   
   /* Estilo para a primeira seção de cards */

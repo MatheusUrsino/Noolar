@@ -12,14 +12,13 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.1rem;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 20%;
-
   font-size: 130%;
 }
 
 .paginaCOmunidadeObjetos {
-  margin-top: -15vw;
+  margin-top: -22vw;
 }
 
 @media screen and (max-width: 1020px) {

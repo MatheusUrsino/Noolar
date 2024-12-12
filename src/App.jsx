@@ -5,10 +5,12 @@ import AppDocs from "./Documentos/AppDocs";
 import AppDocsNecessarios from "./DocumentosNecessarios/AppDocsNecessarios";
 import AppDaComunidades from "./ComunidadesArea/AppComunidades.jsx";
 import NavbarApp from "./header/NavBarApp.jsx";
+// import Cursos from "./Cursos"
 import Footer from "./footer/Footer.jsx";
 import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppMenu from "./MainMenu/components/menu.jsx";
 import AppServico from "./ServicesPage/AppServico.jsx";
+
 function App() {
   return (
     <Router>
@@ -28,6 +30,7 @@ function App() {
 
           <Route path="/Comunidades" element={<AppDaComunidades />} />
           <Route path="/SobreNos" element={<SobreNos />} />
+          <Route path="/Cursos" element={<Cursos />} />
         </Routes>
       </main>
       <footer>
