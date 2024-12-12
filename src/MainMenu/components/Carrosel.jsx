@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 import Imigro1 from "../assets/imigrante1.png";
 import Imigro2 from "../assets/imigrante2.png";
 import Imigro3 from "/bgSlideLingolar.svg";
-import LingolarImg from '../assets/lingolarImg.png';
-import Documents from '../assets/documentosNoolar.png';
-import AboutUs from '../assets/AboutUs.png';
+import LingolarImg from "../assets/lingolarImg.png";
+import Documents from "../assets/documentosNoolar.png";
+import AboutUs from "../assets/AboutUs.png";
 
 import CardCarrosel from "./cardCarrosel";
 export default function Carrosel() {
@@ -39,6 +39,7 @@ export default function Carrosel() {
             classeImagem="imageCarrosel"
             image={LingolarImg}
             bgImage="/bgCarrosel.svg"
+            lingolar="https://lingo-lar.vercel.app/"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -48,6 +49,7 @@ export default function Carrosel() {
             classeImagem="imageCarrosel"
             image={Documents}
             bgImage="/bgCarrosel.svg"
+            destino="/Documentos"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -57,13 +59,13 @@ export default function Carrosel() {
             bgImage="/bgCarrosel.svg"
             classeImagem="imageCarrosel"
             image="/AboutUs.svg"
+            destino="/SobreNos"
           />
         </SwiperSlide>
       </Swiper>
     </div>
   );
 }
-
 
 // const dadosCarrosel = [
 //     {

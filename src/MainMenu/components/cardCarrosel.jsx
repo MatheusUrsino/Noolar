@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/MainMenuStyle.css";
+import { Link } from "react-router-dom";
 
 function CardCarrosel(props) {
   return (
@@ -10,12 +11,16 @@ function CardCarrosel(props) {
       <div className="textCarrosel">
         <h2>{props.titulo}</h2>
         <h4>{props.texto}</h4>
-        <button className="carroselButton"><p>Acesse Aqui</p></button>
-
+        <Link to={props.destino}>
+          <a href={props.lingolar}>
+            <button className="carroselButton">
+              <p>Acesse Aqui</p>
+            </button>
+          </a>
+        </Link>
       </div>
-        <div className={props.classeImagem}>
-        </div>
-      </div>
+      <div className={props.classeImagem}></div>
+    </div>
   );
 }
 
