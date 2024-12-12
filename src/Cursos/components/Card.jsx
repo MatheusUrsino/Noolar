@@ -1,18 +1,20 @@
-import React from "react";
-import '../css/InscrevaSe.css';
+import "./css/cardCursos.css";
 
-function Card(Props)
-{    return (
-        <>
-            <div className="card" id={Props.nomeDoId}>
-                <img src={Props.imagem} alt={Props.legendas} className="imageCards" />
-                <h3>{Props.nomeDoCurso}</h3>
-                <a href="#"> <button>Inscreva-se</button></a>
-            </div>
-        </>
-    );
-};
+function CursoCard(props) {
+  return (
+    <div className="CursosBox" style={{backgroundColor:props.bgColor}}>
+      <img
+        className="Cursosimagem"
+        src={props.image}
+        alt={props.desc}
+        draggable="false"
+      />
+      <div className="Cursoslegenda">
+        <h4>{props.titulo}</h4>
+        <p>{props.autor}</p>
+      </div>
+    </div>
+  );
+}
 
-export default Card;
-
-//                <img src="/img/profissionalizante1.svg" alt="Imagem do curso básico" className="imageCards" />
+export default CursoCard;
