@@ -11,6 +11,7 @@ import SobreNos from "./SobreNos/SobreNos.jsx";
 import AppMenu from "./MainMenu/components/menu.jsx";
 import AppServico from "./ServicesPage/AppServico.jsx";
 import AppCursos from "./Cursos/AppCursos.jsx";
+import Doacao from "./PaginaDoacao_Noolar/src/Doacao.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/Comunidades" element={<AppDaComunidades />} />
           <Route path="/SobreNos" element={<SobreNos />} />
           <Route path="/Cursos" element={<AppCursos />} />
+          <Route path="/Doacao" element={<Doacao />} />
         </Routes>
       </main>
       <footer>

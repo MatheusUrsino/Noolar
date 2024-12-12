@@ -71,12 +71,23 @@
 }
 
 @media (max-width: 1200px) {
+  .CursosBox img {
+    background: #000;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-top: 1vw;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 70%;
+  }
+  
   .CursosBox {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 45%;
-    height: 20vh;
+    height: 30vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
