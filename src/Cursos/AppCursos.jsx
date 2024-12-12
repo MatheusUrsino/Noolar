@@ -4,7 +4,7 @@ import './css/InscrevaSe.css'; // Importando o CSS específico
 
 import InscrevaSe from './components/InscrevaSe';
 
-function App() {
+function AppCursos() {
   return (
     <div>
       <InscrevaSe />
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppCursos;
