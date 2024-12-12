@@ -4,7 +4,7 @@ import "./components/css/curso.css";
 import "swiper/css";
 import CursosHeader from "./components/cursoHeader";
 import TextCard from "./components/textCard";
-import CursoCard from "./components/card";
+import CursoCard from "./components/Card";
 import ButtonCurso from "../Documentos/components/buttonCurso";
 
 function AppCursos() {
