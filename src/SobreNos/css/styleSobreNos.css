@@ -34,16 +34,14 @@
 
 /* Estilo do plano de fundo */
 .bgSobreNos {
-  margin-top: -35rem;
+  margin-top: -100rem;
   z-index: -1;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 20rem;
-  left: 4rem;
-  width: 95vw;
-  scale: 5 5;
-  height: 50vh;
+  width: 100%;
+  scale: 3.5 3.5;
   overflow: hidden;
 }
 
@@ -72,6 +70,19 @@
   align-items: center;
   gap: 3rem;
 }
+@media (max-width: 1800px) {
+  .bgSobreNos {
+    margin-top: -70rem;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    scale: 3.5 3.5;
+    overflow: hidden;
+  }
+}
 @media (max-width: 1000px) {
   #tituloSobreNos {
     margin-top: 10vh;
@@ -91,5 +102,9 @@
 
   .devsSection > div {
     flex: 1 1 calc(100% - 1rem);
+  }
+  .bgSobreNos {
+    margin-top: -6rem;
+
   }
 }
