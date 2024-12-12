@@ -251,6 +251,8 @@ body {
 @media (max-width: 480px) {
   .hero_container {
     padding-top: 1em;
+    margin-top: -10vw;
+    scale: 1;
     display: flex;
     flex-direction: column;
     /* Coloca os elementos em coluna */
@@ -270,6 +272,7 @@ body {
     text-align: center;
     /* Centraliza o texto para melhor legibilidade */
     translate: 0 0;
+    scale: 1.1;
     /* Remove o deslocamento */
   }
 
