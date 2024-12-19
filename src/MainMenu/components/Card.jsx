@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
-
-
 function Cards({ title, description, imageUrl, bgColor, buttonText, destino }) {
 
 

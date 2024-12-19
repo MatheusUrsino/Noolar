@@ -8,13 +8,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Link } from "react-router-dom";
-import Imigro1 from "../assets/imigrante1.png";
-import Imigro2 from "../assets/imigrante2.png";
-import Imigro3 from "/bgSlideLingolar.svg";
 import LingolarImg from "../assets/lingolarImg.png";
 import Documents from "../assets/documentosNoolar.png";
-import AboutUs from "../assets/AboutUs.png";
 
 import CardCarrosel from "./cardCarrosel";
 export default function Carrosel() {
