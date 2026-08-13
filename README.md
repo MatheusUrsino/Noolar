@@ -1,12 +1,14 @@
-# 📚 Noolar
+# 🌎 Noolar
 
-Noolar é uma plataforma educacional voltada para leitura, pensada para oferecer um espaço simples, organizado e agradável de acesso a conteúdos.
+Noolar é uma plataforma pensada para apoiar imigrantes latino-americanos em sua integração no Brasil, oferecendo cursos de português, orientação sobre o ambiente de trabalho, direcionamento sobre documentação, área de leitura e uma comunidade de apoio entre imigrantes.
 
 ## ✨ Funcionalidades
 
-- Organização de conteúdos de leitura em um ambiente único
-- Interface limpa e responsiva
-- Navegação simples entre materiais
+- Cursos de português e orientação cultural/profissional
+- Direcionamento sobre documentação necessária para regularização no Brasil
+- Área de leitura com conteúdos variados
+- Espaço de comunidade para troca de experiências
+- Integração com o LingoLar para aprendizado de idiomas
 
 ## 🛠️ Tecnologias utilizadas
 
