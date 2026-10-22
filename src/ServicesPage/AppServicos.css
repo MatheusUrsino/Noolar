@@ -173,6 +173,47 @@
     }
   }
 
+/* ===== Celular/tablet ===== */
+@media (max-width: 800px) {
+  .fundoDaHeader {
+    width: 100%;
+    height: clamp(340px, 95vw, 600px);
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .containerHeaderServicos {
+    margin-top: 0;
+    padding-top: 4.5rem;
+  }
+
+  .contentHeaderServicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textHeaderServicos {
+    font-size: 0.75rem;
+    width: 88%;
+    justify-content: center;
+  }
+
+  .textMidServico {
+    margin-top: 30vw;
+    padding: 0 1rem;
+  }
+
+  .textMidServico h2 {
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+  }
+
+  .ServicoscontentSection {
+    margin-top: 12vw;
+    padding: 20px 16px;
+  }
+}
+
 /* //  {[
     {
       front: "Renda Brasil",

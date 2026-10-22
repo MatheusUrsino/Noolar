@@ -36,7 +36,8 @@
   position: relative;
   top: 0;
   right: 0;
-  width: 100vw;
+  flex: 1;
+  min-width: 0;
   text-align: left;
   margin: 15vw 1vw;
 }
@@ -132,5 +133,42 @@
 
   .CursosbgImage {
     top: -10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentHeaderCursos {
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 30vw;
+  }
+
+  .contentHeaderCursos img {
+    margin-left: 1rem;
+  }
+
+  .CursosestanteIMG {
+    width: 32%;
+  }
+
+  .Cursosbox-title {
+    margin: 0 1rem;
+    top: 0;
+  }
+
+  .Cursostitulo {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+    margin-left: 0;
+  }
+
+  .Cursossubtitulo {
+    font-size: clamp(0.85rem, 4vw, 1.1rem);
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .CursosbgImage {
+    top: 0;
+    height: 80vw;
   }
 }

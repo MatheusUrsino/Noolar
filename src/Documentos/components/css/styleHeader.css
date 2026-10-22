@@ -135,3 +135,36 @@
     height: 25%;
   }
 }
+
+@media (max-width: 600px) {
+  .Docsbox-title {
+    scale: 1;
+    left: 0;
+    top: 0;
+    margin: 4.75rem 1.25rem 0;
+  }
+
+  .DocsImg {
+    width: 26%;
+  }
+
+  .Docstitulo {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    margin-left: 0.5rem;
+  }
+
+  .Docssubtitulo {
+    font-size: clamp(0.78rem, 3.6vw, 1rem);
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+
+  .DocsbgImage {
+    top: 0;
+    height: 80vw;
+  }
+
+  .DocsbgImage img {
+    object-position: center bottom;
+  }
+}

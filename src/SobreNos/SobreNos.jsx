@@ -6,8 +6,9 @@ import "./css/styleSobreNos.css";
 function SobreNos() {
   return (
     <>
+      <section className="headerSobreNos">
         <h1 id="tituloSobreNos">Valores que fazem a diferença.</h1>
-          <img src="/bgSobreNos.svg" alt="fundo" className="bgSobreNos" />
+        <div className="iconsSobreNos">
           <ContentHeaderSobreNos
             iconImage="/starIcon.svg"
             legenda="estrela"
@@ -26,7 +27,9 @@ function SobreNos() {
             title="Valores"
             text="Empatia, solidariedade, transparência, confiabilidade, educação e capacitação."
           />
-       
+        </div>
+      </section>
+
         <section className="ConteudoSobreNos">
       <h2 id="tituloConteudoSobreNos" className="highlightAqua">
         Desenvolvedores:

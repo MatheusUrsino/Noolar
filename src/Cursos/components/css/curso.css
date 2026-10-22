@@ -15,7 +15,7 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -141,8 +141,8 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    scale: 1.2;
-    gap: 6vw;
+    align-items: center;
+    gap: 24px;
   }
 
   .cursosSectionDiv h2 {
@@ -211,5 +211,45 @@
     background-size: cover;
   
   
+  }
+}
+
+/* ===== Celulares ===== */
+@media (max-width: 600px) {
+  .cursosSectionDiv h2 {
+    font-size: 1.6rem;
+    margin-bottom: 40vw;
+  }
+
+  #issoAI {
+    margin-top: 30vw;
+  }
+
+  .textsAreaCurso img {
+    left: 0;
+    scale: 1;
+    width: 60%;
+    margin-top: 0;
+  }
+
+  .redesSociais {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .redesSociais h4 {
+    font-size: 1rem;
+  }
+
+  .redesSociais img {
+    width: 80%;
+    margin: 0;
+  }
+
+  .buttonsRedes {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 1.5rem 0 3rem;
   }
 }

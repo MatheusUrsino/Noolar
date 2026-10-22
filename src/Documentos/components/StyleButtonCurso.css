@@ -54,3 +54,16 @@
     }
 
 }
+@media (max-width: 600px) {
+  .btnCurso {
+    width: auto;
+    min-width: 150px;
+    height: auto;
+    min-height: 44px;
+    padding: 10px 24px;
+  }
+
+  .btnCurso h4 {
+    font-size: 1rem;
+  }
+}

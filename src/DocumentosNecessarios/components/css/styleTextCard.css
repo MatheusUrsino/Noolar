@@ -60,3 +60,20 @@
     font-size: 3vw; /* Fonte proporcional à viewport */
   }
 }
+
+@media (max-width: 600px) {
+  .DocsNtextoDoCard,
+  .DocsNtextoDoCardDireita {
+    width: 88vw;
+    font-size: 0.9rem;
+    padding: 12px 18px;
+  }
+
+  .DocsNtextoDoCard {
+    border-radius: 0 30px 30px 0;
+  }
+
+  .DocsNtextoDoCardDireita {
+    border-radius: 30px 0 0 30px;
+  }
+}

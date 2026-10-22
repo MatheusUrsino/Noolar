@@ -26,11 +26,17 @@ function NavbarApp() {
 
   return (
     <header className="headerApp">
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <button
+        type="button"
+        className="hamburger"
+        aria-label="Abrir menu"
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
       <div className="contentNavbar">
         <div className="logo">
           <Link to="/" className="linkNavigate">
@@ -72,12 +78,20 @@ function NavbarApp() {
         </div>
       </div>
       {menuOpen && (
+        <div className="sidebarOverlay" onClick={() => setMenuOpen(false)} />
+      )}
+      {menuOpen && (
         <div className="sidebar">
-          <button className="closeBtn" onClick={() => setMenuOpen(false)}>
+          <button
+            type="button"
+            className="closeBtn"
+            aria-label="Fechar menu"
+            onClick={() => setMenuOpen(false)}
+          >
             ×
           </button>
           <div className="sidebarLogo">
-            <Link to="/" className="linkNavigate">
+            <Link to="/" className="linkNavigate" onClick={() => setMenuOpen(false)}>
               <img
                 src="/images/logo.png"
                 alt="Logo Noolar"
@@ -87,7 +101,8 @@ function NavbarApp() {
               <h2>Noolar</h2>
             </Link>
           </div>
-          <div className="sideBarContent">
+          {/* Fecha o menu ao escolher uma página */}
+          <div className="sideBarContent" onClick={() => setMenuOpen(false)}>
             <ItensSideBar link="/AreaDaLeitura" item="Area da Leitura" />
             <ItensSideBar link="/Cursos" item="Cursos" />
             <ItensSideBar link="/Comunidades" item="Comunidade" />

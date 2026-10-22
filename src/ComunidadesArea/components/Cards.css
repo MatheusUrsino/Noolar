@@ -320,3 +320,25 @@ margin-right: auto;
     }
 
 }
+/* ===== Ajustes finais de responsividade ===== */
+@media screen and (max-width: 531px) {
+    .imagensConfiguracao {
+        width: min(320px, 88vw);
+        margin: 14px auto;
+    }
+
+    .contato {
+        padding: 48px 16px;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .imagemGlobo {
+        width: min(260px, 70vw);
+    }
+
+    .comunidadeTexto {
+        margin-right: 0;
+        align-self: stretch;
+    }
+}

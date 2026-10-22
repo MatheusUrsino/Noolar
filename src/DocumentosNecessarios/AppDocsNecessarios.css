@@ -45,3 +45,14 @@
     grid-template-columns: 1fr; /* 1 coluna */
   }
 }
+
+@media (max-width: 800px) {
+  .DocsNsection {
+    margin-top: 0;
+  }
+
+  .DocsNcontentSection {
+    gap: 24px;
+    padding: 20px 0;
+  }
+}
