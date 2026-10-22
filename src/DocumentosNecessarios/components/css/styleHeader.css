@@ -124,3 +124,42 @@
     height: 25%;
   }
 }
+
+/* ===== Celular/tablet: o cabeçalho passa a ocupar espaço de verdade
+   (antes ficava "flutuando" e o título sumia atrás do menu) ===== */
+@media (max-width: 800px) {
+  .DocsNDocsNheader {
+    position: relative;
+  }
+
+  .NescessariosDocsNbgImage {
+    top: 0;
+    height: 100%;
+  }
+
+  .NescessariosDocsNbgImage img {
+    object-position: center bottom;
+  }
+
+  .NescessariosDocsNbox-title {
+    position: relative;
+    margin: 0;
+    padding: 5rem 1.5rem 24vw;
+  }
+
+  .NescessariosDocsNtitulo {
+    font-size: clamp(1.4rem, 6.5vw, 2.2rem);
+    margin: 0 0 0.5rem;
+  }
+
+  .NescessariosDocsNImg {
+    width: clamp(90px, 28vw, 180px);
+    height: auto;
+  }
+
+  .NescessariosDocsNsubtitulo {
+    font-size: clamp(0.85rem, 3.6vw, 1.15rem);
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+}

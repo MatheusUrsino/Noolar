@@ -86,8 +86,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 45%;
-    height: 30vh;
+    width: min(90%, 420px);
+    height: auto;
+    min-height: 280px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -100,7 +101,8 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 40vh;
+    height: auto;
+    min-height: 340px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -122,5 +124,17 @@
     justify-content: center;
     align-items: center;
     font-size: 15px; /* Tamanho final */
+    padding: 0 1rem 1rem;
+  }
+
+  .CursosBox img {
+    margin-top: 12px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .Cursoslegenda h4 {
+    font-size: 1.1rem;
+    padding: 1rem 0;
   }
 }

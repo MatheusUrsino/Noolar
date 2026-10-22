@@ -117,3 +117,32 @@
     top: -10vw;
   }
 }
+
+@media (max-width: 600px) {
+  .Leiturabox-title {
+    margin: 4.5rem 32% 30vw 1.25rem;
+    top: 0;
+  }
+
+  .Leituratitulo {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    margin-left: 0;
+  }
+
+  .Leiturasubtitulo {
+    font-size: clamp(0.8rem, 3.6vw, 1rem);
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .Leituraimagem-container {
+    top: 4.25rem;
+    right: 1.25rem;
+    width: 24%;
+  }
+
+  .LeiturabgImage {
+    top: 0;
+    height: 80vw;
+  }
+}

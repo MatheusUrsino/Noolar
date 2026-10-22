@@ -143,3 +143,54 @@
       margin: -5vw auto 0 auto; /* Centraliza horizontalmente */
     }
   }
+/* ===== Ajustes de responsividade ===== */
+
+/* Cards "Documentação / Serviços / Direitos": flex com wrap para o último
+   card ficar centralizado em vez de sobrar sozinho num canto */
+@media (max-width: 1200px) {
+  .DocscontentSectionFirst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .DocscontentSectionFirst .DocscardStatic {
+    width: min(340px, 42vw);
+  }
+}
+
+@media (max-width: 800px) {
+  .DocscontentSectionFirst {
+    gap: 1.25rem;
+    margin-bottom: 20vw;
+  }
+
+  .DocscontentSectionFirst .DocscardStatic {
+    width: min(420px, 88%);
+  }
+
+  .DocscontentSection {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Docssection {
+    margin-top: 76vw;
+  }
+
+  .Docstexto {
+    font-size: 0.95rem;
+    height: auto;
+    padding: 2.5rem 1rem;
+  }
+
+  .textDocs {
+    font-size: 1.6rem;
+  }
+
+  .Docsairplane {
+    margin-top: 0;
+  }
+}

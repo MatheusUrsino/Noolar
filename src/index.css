@@ -21,3 +21,20 @@
   text-decoration: inherit;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Nenhuma imagem passa da largura do container (evita scroll lateral no celular) */
+img,
+video {
+  max-width: 100%;
+}
+
+/* Trava o scroll da página enquanto o menu lateral está aberto */
+body.no-scroll {
+  overflow: hidden;
+}
+

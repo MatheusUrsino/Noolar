@@ -1,28 +1,19 @@
 .containerIconSobreNos {
   display: flex;
-  align-items: center; /* Alinha o ícone no topo */
-  
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
+  align-items: center;
+  gap: 1rem;
   width: 100%;
 }
 
 .iconSobreNos {
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
   flex-shrink: 0; /* Evita que o ícone seja redimensionado */
 }
 
-.contentTextSobreNos {
-  overflow: hidden;
-  
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
-
-  display: flex;
-  flex-direction: column; /* Organiza subtítulo e texto em uma coluna */
+.sectionTexts {
+  min-width: 0;
 }
 
 .subtitleSobreNos {
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
-
   text-align: left;
   margin: 0;
   font-size: 1.5rem;
@@ -31,45 +22,27 @@
 
 .textSobreNos {
   text-align: left;
-  margin: 0; /* Remove margens adicionais */
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
+  margin: 0;
   font-size: 1rem;
   width: 100%;
-
   color: #fff;
-}
-
-.sectionTexts {
-  overflow: hidden;
-  margin-top: 4vh;
-  margin-right: 2vh;
-  overflow: hidden; /* Impede o scroll da imagem de fundo */
 }
 
 @media (max-width: 768px) {
   .containerIconSobreNos {
-    display: flex;
-    align-items: flex-start; /* Alinha o ícone no topo */
-    overflow: hidden; /* Impede o scroll da imagem de fundo */
-    width: 100%;
-    margin-bottom: 10vw;
+    align-items: flex-start;
+  }
+
+  .iconSobreNos {
+    width: 56px;
+    height: 56px;
   }
 
   .subtitleSobreNos {
-    overflow: hidden; /* Impede o scroll da imagem de fundo */
-
-    text-align: left;
-    margin: 0;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 1.1rem;
   }
+
   .textSobreNos {
-    text-align: left;
-    margin: 0; /* Remove margens adicionais */
-    overflow: hidden; /* Impede o scroll da imagem de fundo */
-    font-size: 0.5rem;
-    width: 100%;
-  
-    color: #fff;
+    font-size: 0.9rem;
   }
 }

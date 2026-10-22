@@ -2,11 +2,10 @@
   display: flex; /* Torna a div um container flex */
   justify-content: center; /* Centraliza horizontalmente o conteúdo */
   align-items: center; /* Centraliza verticalmente o conteúdo */
-  width: 100vw; /* Largura total da viewport */
-  overflow: hidden; /* Remove barras de rolagem */
-  margin: 0; /* Remove margens externas */
-  padding: 0; /* Remove paddings internos */
-  box-sizing: border-box; /* Garante que padding/margins não extrapolem o tamanho */
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -30,8 +29,6 @@
 }
 
 .iconDev {
-margin-left: auto;
-margin-right: auto;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -39,8 +36,7 @@ margin-right: auto;
 }
 
 .contentTextDev {
-  width: 50%;
-  margin-left: -10vw;
+  width: 170px;
   overflow: hidden;
 }
 
@@ -80,22 +76,18 @@ margin-right: auto;
   background-color: #285f76;
 }
 
-.devsSection {
-  margin-top: 10vh;
-  overflow: hidden;
-}
-
 @media (max-width: 1368px) {
-  .developers {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-  }
-
   .subtitleDevs {
     text-align: left;
     margin: 0;
     font-size: 1.1rem;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 400px) {
+  .iconDev {
+    width: 96px;
+    height: 96px;
   }
 }

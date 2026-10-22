@@ -1,5 +1,5 @@
 .contentComunidade {
-  width: 100vw; /* Ocupa a largura total da tela */
+  width: 100%; /* Ocupa a largura total da tela (100vw somava a barra de rolagem) */
   overflow-x: hidden;
 }
 
@@ -38,5 +38,12 @@
 
   .paginaCOmunidadeObjetos {
     margin-top: -15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textInWhite {
+    padding: 0 1rem;
+    font-size: 100%;
   }
 }

@@ -150,3 +150,58 @@
 
 
 }
+/* ===== Responsividade ===== */
+
+/* Cada livro tem a largura da capa: títulos longos quebram linha em vez de
+   alargar o item e empurrar o carrossel */
+.Leituralivro {
+  flex: 0 0 auto;
+  width: 13vw;
+}
+
+.LeituraimagemLivro {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .Leituralivro {
+    width: 28vw;
+    margin-right: 4vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .Leituralivro {
+    width: 34vw;
+  }
+
+  .LeituraimagemLivro {
+    height: 48vw;
+    border-radius: 8px;
+  }
+}
+
+/* Celular/tablet não tem "hover": mostra título e autor sempre */
+@media (hover: none) {
+  .Leituralivro h4,
+  .Leituralivro p {
+    opacity: 1;
+  }
+
+  .Leituralivro h4 {
+    font-size: clamp(0.75rem, 3vw, 1rem);
+  }
+
+  .Leituralivro p {
+    font-size: clamp(0.7rem, 2.6vw, 0.9rem);
+  }
+
+  .Leituralivro:hover h4 {
+    font-size: clamp(0.75rem, 3vw, 1rem);
+  }
+
+  .Leituralivro:hover p {
+    font-size: clamp(0.7rem, 2.6vw, 0.9rem);
+  }
+}
